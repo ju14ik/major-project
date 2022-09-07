@@ -1,0 +1,254 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of reset */
+
+/*======= FONTS =======*/
+@font-face {
+    font-family: ClearSansRegular;
+    src:url("../fonts/ClearSans-Regular.ttf");
+}
+@font-face {
+    font-family: ClearSansItalic;
+    src:url("../fonts/ClearSans-Italic.ttf");
+}
+@font-face {
+    font-family: ClearSansBold;
+    src:url("../fonts/ClearSans-Bold.ttf");
+}
+
+/*======= LAYOUT =======*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body {
+    font-family: ClearSansRegular;
+    max-width: 2000px;
+    height: 100%;
+    margin: 0 auto;
+    color: #111;
+    line-height: 1.4em;
+    font-size: 1.2em;
+}
+/* header {
+    padding-top: 10px;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+} */
+.index-page {
+    display: grid;
+    grid-template-columns: 0.8fr 2fr 2fr;
+    grid-template-areas: 
+        "empty1 block1 empty2"
+        "footer footer footer"; 
+    /* justify-items: center; */
+    /* background-color: DodgerBlue; */
+    /* border: 3px solid black; */
+    min-height: 1000px;
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right; 
+    background-size: calc(((100% - 940px) / 2) + 341px);
+    
+}
+footer {
+    grid-area: footer;
+    width: 100%;
+    background-color: #f7f1ee;
+    text-align: center;
+    padding: 0.5em;
+    /* height: 1.8em; */
+    /* margin-top: auto;   */
+}
+/* Logo */
+
+/*======= 404 page =======*/
+.error-404 {
+    text-align: center;
+    margin-top: 25vh;
+}
+.error-404 > h4 {
+    font-size: 1.6em;
+}
+.error-404 > h4, .error-404 > p, .error-404 > a:last-child {
+    padding-top: 1em;
+}
+.error-404 > a {
+    color: #429fbf;
+}
+
+/*======= TYPOGRAPHY =======*/
+body {
+    /* font-family: 'Nunito', Calibri, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1.6em; */
+}
+h1, h2, .fullMenu-left li a, .fullMenu-right li a, .menuToggle a {
+    /* font-family: 'Cormorant', Georgia, "Times New Roman", Times, serif; */
+}
+.caption {
+    /* text-transform: uppercase; */
+}
+.index-page > h2 {
+    /* text-transform: uppercase;
+    font-weight: 700; */
+}
+.block > h2, .map > h2, footer > h2 {
+    /* text-transform: uppercase;
+    font-weight: 700;   */
+}
+footer > h2 span, .text-section > h2 span {
+    /* font-size: 1.6em; */
+}
+
+/* ======= RESPONSIVE STYLING ======= */
+/* Small phones */
+@media (min-width: 280px) {
+}
+
+/* Tablets */
+@media (min-width: 768px) {
+}
+
+/* Laptops */
+@media (min-width: 992px) {
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+}
+@media (min-width: 1400px) {
+}
+@media (min-width: 1600px) {
+}
+
+
+.shifted-small-block {
+    grid-area: block1;
+    position: relative;
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+        "main main main"
+        "text-section text-section text-section"
+        "text text text"
+        "item1 item2 item3";  */
+    /* background-color: yellow; */
+    /* height: 100vh; */
+    padding: 100px 20px 20px 20px;
+}
+
+h1 {
+    /* font-weight: bold; */
+    font-family: ClearSansBold;
+    font-size: 5em;
+    line-height: 1em;
+}
+
+.header-outer-block {
+    padding: 20px 0 20px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: column;
+    /* border: 3px solid black;
+    grid-gap: 3px;
+    border-color: black; */
+}
+
+.header-inner-block {
+    padding-right: 40px;
+}
+
+.header-inner-block > a {
+    display: block;
+    padding-top: 30px;
+    font-size: 0.85em;
+    /* font-style: italic; */
+    font-family: ClearSansItalic;
+    text-decoration: 4px underline solid #fabd02;
+    text-underline-offset: 8px;
+}
+
+a:link, a:visited {
+    color: #111;
+}
+
+a:hover {
+    text-decoration: 4px underline solid #cc9a02;
+}
+
+
+.header-outer-block > div:not(:first-child) {
+    padding: 10px 0 10px 20px;
+    color: #999;
+    font-family: ClearSansItalic;
+    /* font-style: italic; */
+    margin: auto;
+    border-left: 4px solid #fabd02;
+}
+
+
+/* .background {
+    grid-area: image1;
+    height: 1000px;
+    width: calc(((100% - 1140px) / 2) + 414px);
+    left: auto;
+    right: 0;
+} */
+
+.shape {
+    width: 420px;
+    height: 110px;
+    position: absolute;
+    top: 85px;
+    left: 0;
+    margin: 59px auto 0 0;
+    background-color: #fabd02;
+    z-index: -1;
+}
