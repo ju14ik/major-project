@@ -33,9 +33,9 @@
             <!-- SERVER -->
             <? //include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.inc.php'; ?>
             <? //include $_SERVER['DOCUMENT_ROOT'] . '/includes/navigation.inc.php'; ?>
+            <? include 'includes/navigation.inc.php'; ?>
 
-            <nav class="menu">
-            <!-- <img src="./images/hedgehog-4.png" alt=""> -->
+            <!-- <nav class="menu">
             <a href="index.php"><img src="./images/logo.jpg" alt="" title=""/></a> 
             <p>Your guide to delicious hiking food</p>
             <ol>
@@ -53,7 +53,7 @@
                 <li class="menu-item"><a href="skills-hub.php">Skills hub</a></li>
             </ol>
 
-            </nav>
+            </nav> -->
 
             <!-- LOCAL -->
             <? //include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.inc.php'; ?>
