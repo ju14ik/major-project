@@ -1,3 +1,4 @@
 <header>
-    <!-- <a href="index.php"><img src="./images/hedgehog-8.png" alt="" title=""/></a>   -->
+    <h1>Your guide to delicious hiking food</h1>
+    <img src="./images/main.jpg" alt="" title="Easy backpacking healthy meal"/>
 </header>

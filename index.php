@@ -30,41 +30,14 @@
     </head>
 	<body>
         <div class="wrapper">
-            <!-- SERVER -->
-            <? //include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.inc.php'; ?>
-            <? //include $_SERVER['DOCUMENT_ROOT'] . '/includes/navigation.inc.php'; ?>
-            <? include 'includes/navigation.inc.php'; ?>
 
-            <!-- <nav class="menu">
-            <a href="index.php"><img src="./images/logo.jpg" alt="" title=""/></a> 
-            <p>Your guide to delicious hiking food</p>
-            <ol>
-                <li class="menu-item"><a href="index.php">Home</a></li>
-                <li class="menu-item">
-                <a href="recipes.php">Recipes</a>
-                <ol class="sub-menu">
-                    <li class="menu-item"><a href="breakfast.php">Breakfast</a></li>
-                    <li class="menu-item"><a href="lunch.php">Lunch</a></li>
-                    <li class="menu-item"><a href="dinner.php">Dinner</a></li>
-                    <li class="menu-item"><a href="snacks.php">Snacks</a></li>
-                    <li class="menu-item"><a href="drinks.php">Drinks</a></li>
-                </ol>
-                </li>
-                <li class="menu-item"><a href="skills-hub.php">Skills hub</a></li>
-            </ol>
-
-            </nav> -->
-
-            <!-- LOCAL -->
-            <? //include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.inc.php'; ?>
-            <? //include $_SERVER['DOCUMENT_ROOT'] . '/includes/navigation.inc.php'; ?>
+            <?php include 'includes/navigation.inc.php'; ?>
+            <?php include 'includes/header.inc.php'; ?>
 
             <main>
-                <!-- <h1>Every meal on hike matters</h1> -->
+                <!-- <h1>Your guide to delicious hiking food</h1> -->
 
                 <!-- <p>The goal of this website is to make it easier for people to enjoy great food outdoors.</p> -->
-
-                <img src="./images/main.jpg" alt="" title="Easy backpacking healthy meal"/>
 
                 <p>In order to choose the best foods for hiking, you need to strike the right balance. Ideally, you should eat foods that are tasty and packed with nutrients, but they should also be light and portable. In contrast to running and cycling, you don't just consider fuelling your effort. If you plan on hiking for a few days, you may need to consider lunches and even post-hike dinners while you're still in the wilderness.</p>
 
@@ -92,11 +65,7 @@
 
             </main>
 
-            <!-- SERVER -->
-            <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.inc.php'; ?>
-
-            <!-- LOCAL -->
-            <? //include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.inc.php'; ?>
+            <?php include 'includes/footer.inc.php'; ?>
         </div>
     </body>
 </html>

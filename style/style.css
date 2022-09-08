@@ -70,16 +70,16 @@ main {
     padding-bottom: 2em;
 }
 /* Main image */
-main > img {
+/* main > img {
     width: 100%;
     max-width: 800px;
     display: block;
     margin: auto;
     padding-bottom: 2em;
-}
+} */
 /* Header */
 header {
-    background-color: #f65d38;
+    /* background-color: #f65d38; */
 }
 /* Logo */
 header img {
@@ -292,21 +292,10 @@ h3 {
 }
 
 /*======= NAVIGATION, LINKS & ANIMATIONS =======*/
-.menu {
-    background: #f65d38;
-    /* border-bottom: 1px solid #000; */
-    height: 9rem;
-    margin-bottom: 2em;
-    display: flex;   
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0 8em;
-}
 .menu img {
     width: 130px;
     height: auto;
     float: left;
-    /* padding: 0.3em 0 0.2em 0.6em; */
 }
 .menu ol {
     list-style-type: none;
@@ -314,10 +303,13 @@ h3 {
     /* padding: 0; */
 }
 .menu > ol {
-    max-width: 1000px;
+    /* text-align: right; */
+    position: absolute; bottom: 0; right: 0;
+    /* list-style-position: inside; */
+    /* max-width: 1000px; */
     /* padding: 0 2rem; */
     /* display: flex; */
-    margin-left: auto;
+    /* margin-left: auto; */
 }
 .menu > ol > .menu-item {
     /* flex: 1;
@@ -325,6 +317,9 @@ h3 {
     display: inline-block;
     margin: 0 10px;
     padding: 0 2em 0 2em;
+}
+.menu > ol > .menu-item:last-child {
+    margin-right: -2em;
 }
 .menu > ol > .menu-item:after {
     content: "";
@@ -507,13 +502,65 @@ a {
 /* ======= RESPONSIVE STYLING ======= */
 
 
-.menu > p {
+
+
+/* ----------------------------------- */
+
+.menu {
+    position: relative;
+}
+
+.menu > h1 {
     color: #fff;
     font-weight: 500;
     font-size: 2.4em;
     padding-left: 10px;
 }
 
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+        "nav-b     nav-b      nav-b     nav-b"
+        "empty     header     header    header"
+        "main      main       main      main"
+        "footer    footer     footer    footer"; 
+}
 
-/* ----------------------------------- */
+.nav-wrapper {
+    background: #f65d38;
+    /* margin-bottom: 2em; */
+    display: flex;   
+    justify-content: flex-end;
+    align-items: center;
+    grid-area: nav-b;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+        "empty nav-a nav-a empty2";
+}
 
+nav {
+    grid-area: nav-a;
+}
+
+header {
+    grid-area: header;
+}
+header > img {
+    float: right;
+    max-width: 100%;
+    /* width: 100%; */
+    /* max-width: 800px; */
+    /* display: block;
+    margin: auto;
+    padding-bottom: 2em; */
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
