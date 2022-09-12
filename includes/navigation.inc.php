@@ -1,8 +1,14 @@
 <div class="nav-wrapper">
   <nav class="menu">
     <!-- <img src="./images/hedgehog-4.png" alt=""> -->
-    <a href="index.php"><img src="./images/logo.jpg" alt="" title=""/></a> 
+    <a href="index.php"><img src="./images/yellow2.png" alt="" title=""/></a> 
     <!-- <h1>Your guide to delicious hiking food</h1> -->
+
+    <form class="example" action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search2">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+
     <ol>
       <li class="menu-item"><a href="index.php">Home</a></li>
       <li class="menu-item">
