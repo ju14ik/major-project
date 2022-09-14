@@ -42,43 +42,43 @@
 
                 <div class="icons">
                     <div class="ico icon7">
-                        <a href=""><img src="./images/icons/sandwich-3.png" alt=""></a>
+                        <a href=""><img src="./images/icons/sandwich-4.png" alt=""></a>
                         <h3>Stoveless meals</h3>
                     </div>
 
                     <div class="ico icon5">
-                        <a href=""><img src="./images/icons/fried-egg-and-pan-3.png" alt=""></a>
+                        <a href=""><img src="./images/icons/fried-egg-and-pan-4.png" alt=""></a>
                         <h3>Stove cooked meals</h3>
                     </div>
 
                     <div class="ico icon1">
-                        <a href=""><img src="./images/icons/cereals-3.png" alt=""></a>
+                        <a href=""><img src="./images/icons/cereals-4.png" alt=""></a>
                         <h3>Breakfast</h3>
                     </div>
 
                     <div class="ico icon3">
-                        <a href=""><img src="./images/icons/dish-3.png" alt=""></a>
+                        <a href=""><img src="./images/icons/dish-4.png" alt=""></a>
                         <h3>Lunch</h3>
                     </div>
 
                     <div class="ico icon6">
-                        <a href=""><img src="./images/icons/steak-3.png" alt=""></a>
+                        <a href=""><img src="./images/icons/steak-4.png" alt=""></a>
                         <h3>Dinner</h3>
                     </div>
 
                     <div class="ico icon8">
-                        <a href=""><img src="./images/icons/snack-3.png" alt=""></a>
+                        <a href=""><img src="./images/icons/snack-4.png" alt=""></a>
                         <h3>Snacks</h3>
                     </div>
 
 
                     <div class="ico icon2">
-                        <a href=""><img src="./images/icons/cookies-3.png" alt=""></a>
+                        <a href=""><img src="./images/icons/cookies-4.png" alt=""></a>
                         <h3>Dessert</h3>
                     </div>
 
                     <div class="ico icon4">
-                        <a href=""><img src="./images/icons/mug-3.png" alt=""></a>
+                        <a href=""><img src="./images/icons/mug-4.png" alt=""></a>
                         <h3>Drinks</h3>
                     </div>
 
