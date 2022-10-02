@@ -47,8 +47,6 @@
                 
                 <div class="icon-row">
 
-                <p>Test</p>
-
                     <div class="icon">
                         <a href="./recipes/breakfast/breakfast.php"><img src="./images/icons/breakfast.png" alt=""></a>
                         <h3>Breakfast</h3>
