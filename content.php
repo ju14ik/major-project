@@ -59,10 +59,9 @@
                                     }
                                     else
                                     {
-                                        // image of 'no image'
+                                        // image of 'no image'?
                                     }
                                 ?> 
-                                <!-- <img src="./images/breakfast/<?php //echo $images_result_fetch['image_file_name']; ?>" alt="" title=""> -->
 
                                 <div class="info">
                                     <h2>
@@ -82,7 +81,7 @@
                     }
                     else
                     {
-                        echo "<h2>No recipes found!</h2>";
+                        echo "<h2>No content found!</h2>";
                     }
                 ?>
             </main>

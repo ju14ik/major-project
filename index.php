@@ -6,65 +6,43 @@
         <div class="wrapper">
 
             <main>
-                <img src="./images/main/white-text.jpg" alt="" title="Easy backpacking healthy meal"/>
-                
-                <div class="icon-row">
 
-                <?php 
-                    $icons_sql = "SELECT image_file_name, image_description, image_href FROM `images` WHERE imagetype_id = '4'";
-                    $icons_result = mysqli_query($connection ,$icons_sql) or die("Icons query failed");
+                <!-- Main image -->
+                <?php
+                    $images_sql = "SELECT image_file_name, image_href FROM `images` 
+                                    WHERE imagetype_id = 5 LIMIT 1";
+                    $images_result = mysqli_query($connection ,$images_sql) or die("Query failed");
+                    $images_result_fetch = mysqli_fetch_array($images_result);
 
-                    if(mysqli_num_rows($icons_result) > 0)
+                    if(mysqli_num_rows($images_result) > 0)
                     {
-                        while($row = mysqli_fetch_assoc($icons_result))
-                        {
-                            echo '<div class="icon">
-                            <a href="'.$row['image_href'].'"><img src="./images/'.$row['image_file_name'].'" alt=""></a>
-                            <a href="'.$row['image_href'].'"><h3>'.$row['image_description'].'</h3></a>
-                            </div>';
-                        }
+                        echo '<img src="./images/'.$images_result_fetch['image_file_name'].'" alt="" title="">';                   
+                    }
+                    else
+                    {
+                        // image of 'no image'?
                     }
                 ?>
 
-                    <!-- <div class="icon">
-                        <a href="content.php?pagename=breakfast"><img src="./images/icons/breakfast.png" alt=""></a>
-                        <h3>Breakfast</h3>
-                    </div>
+                <!-- <img src="./images/main/white-text.jpg" alt="" title="Easy backpacking healthy meal"/> -->
+                
+                <div class="icon-row">
 
-                    <div class="icon">
-                        <a href=""><img src="./images/icons/lunch.png" alt=""></a>
-                        <h3>Lunch</h3>
-                    </div>
+                    <?php 
+                        $icons_sql = "SELECT image_file_name, image_description, image_href FROM `images` WHERE imagetype_id = '4'";
+                        $icons_result = mysqli_query($connection ,$icons_sql) or die("Icons query failed");
 
-                    <div class="icon">
-                        <a href=""><img src="./images/icons/dinner.png" alt=""></a>
-                        <h3>Dinner</h3>
-                    </div>
-
-                    <div class="icon">
-                        <a href="./recipes/snacks/snacks.php"><img src="./images/icons/snacks.png" alt=""></a>
-                        <h3>Snacks</h3>
-                    </div>
-
-                    <div class="icon">
-                        <a href="./recipes/stoveless-meals/stoveless-meals.php"><img src="./images/icons/stoveless-meals.png" alt=""></a>
-                        <h3>Stoveless meals</h3>
-                    </div>
-
-                    <div class="icon">
-                        <a href=""><img src="./images/icons/stove-cooked-meals.png" alt=""></a>
-                        <h3>Stove cooked meals</h3>
-                    </div>
-
-                    <div class="icon">
-                        <a href=""><img src="./images/icons/dessert.png" alt=""></a>
-                        <h3>Dessert</h3>
-                    </div>
-
-                    <div class="icon">
-                        <a href=""><img src="./images/icons/drinks.png" alt=""></a>
-                        <h3>Drinks</h3>
-                    </div> -->
+                        if(mysqli_num_rows($icons_result) > 0)
+                        {
+                            while($row = mysqli_fetch_assoc($icons_result))
+                            {
+                                echo '<div class="icon">
+                                <a href="'.$row['image_href'].'"><img src="./images/'.$row['image_file_name'].'" alt=""></a>
+                                <a href="'.$row['image_href'].'"><h3>'.$row['image_description'].'</h3></a>
+                                </div>';
+                            }
+                        }
+                    ?>
 
                 </div>
 
