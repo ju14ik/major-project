@@ -14,10 +14,10 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
-        server: ftp.hikefoodie.com
+        server: hikefoodie.com
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
-        server-dir: /domains/hikefoodie.com/public_html/
+        server-dir: /domains/hikefoodie.com/public_html/test/
         exclude: |
           **/.git*
           **/.git*/**
