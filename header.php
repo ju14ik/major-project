@@ -116,21 +116,20 @@
                 <!-- Logo -->
                 <?php
                     include 'connect.php';
-                    $images_sql = "SELECT image_file_name FROM `images` 
+                    $images_sql = "SELECT image_file_name, image_href FROM `images` 
                                     WHERE imagetype_id = 1 LIMIT 1";
                     $images_result = mysqli_query($connection ,$images_sql) or die("Query failed");
                     $images_result_fetch = mysqli_fetch_array($images_result);
 
                     if(mysqli_num_rows($images_result) > 0)
                     {
-                        echo '<a href="index.php"><img src="./images/'.$images_result_fetch['image_file_name'].'" alt="" title=""></a>';                   
+                        echo '<a href="'.$row['image_href'].'"><img src="./images/'.$images_result_fetch['image_file_name'].'" alt="" title=""></a>';                   
                     }
                     else
                     {
-                        // image of 'no image'
+                        // image of 'no image'?
                     }
                 ?>
-                <!-- <a href="index.php"><img src="./images/logo-red.png" alt="" title=""/></a> -->
 
                 <!-- Hamburger icon -->
                 <input class="side-menu" type="checkbox" id="side-menu"/>
