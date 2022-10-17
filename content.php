@@ -4,13 +4,12 @@
             if(isset($_GET['pagename']))
             {
                 $pagename = $_GET['pagename'];
-                // echo $pagename;
             }
         ?>
         <div class="wrapper">
             <main>
                 <h1>
-                    <?php echo $pagename; ?>
+                    <?php echo str_replace("-", " ", $pagename); ?>
                 </h1>
 
                 <?php

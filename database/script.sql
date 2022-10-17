@@ -108,7 +108,8 @@ INSERT INTO `imagetype`(`imagetype_name`)
 VALUES ('logo'),
 ('thumbnail'),
 ('full size image'),
-('icon')
+('icon'),
+('main home image')
 
 ----------------------------------------------------------
 
@@ -117,6 +118,8 @@ VALUES ('logo'),
 CREATE TABLE `images` (
   `image_id` INT(30) NOT NULL AUTO_INCREMENT UNIQUE,
   `image_file_name` VARCHAR(100) NOT NULL,
+  `image_description` VARCHAR(100) NULL,
+  `image_href` VARCHAR(100) NULL,
   `imagetype_id` INT(30) NOT NULL,
   `content_id` INT(30) NULL,
   PRIMARY KEY (`image_id`),
@@ -127,7 +130,21 @@ CREATE TABLE `images` (
 ----------------------------------------------------------
 
 -- Data for `images` table
+-- PROD data
+INSERT INTO `images`(`image_file_name`, `image_description`, `image_href`, `imagetype_id`, `content_id`) 
+VALUES ('logo/logo.png',NULL,'index.php','1',NULL),
+('main/white-text.jpg',NULL,NULL,'5',NULL),
+('icons/breakfast.png','Breakfast','content.php?pagename=breakfast','4',NULL),
+('icons/lunch.png','Lunch','content.php?pagename=lunch','4',NULL),
+('icons/dinner.png','Dinner','content.php?pagename=dinner','4',NULL),
+('icons/snacks.png','Snacks','content.php?pagename=snacks','4',NULL),
+('icons/stoveless-meals.png','Stoveless meals','content.php?pagename=stoveless-meals','4',NULL),
+('icons/stove-cooked-meals.png','Stove cooked meals','content.php?pagename=stove-cooked-meals','4',NULL),
+('icons/dessert.png','Dessert','content.php?pagename=dessert','4',NULL),
+('icons/drinks.png','Drinks','content.php?pagename=drinks','4',NULL)
 
+
+-- TEST data
 INSERT INTO `images`(`image_file_name`, `imagetype_id`, `content_id`) 
 VALUES ('breakfast/oatmeal.jpg','2','1'),
 ('breakfast/oatmeal.jpg','2','2'),

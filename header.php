@@ -3,14 +3,14 @@
     $title_name = basename($_SERVER['PHP_SELF']);
     $default_page_title = 'Hike Foodie';
     switch ($title_name) {
-        case 'recipes.php':
+        case 'content.php':
             if(isset($_GET['pagename']))
             {
                 $page_title = $default_page_title . ' | ' . $_GET['pagename'];
             }
             else
             {
-                $page_title = "No post Found";
+                $page_title = "No content found";
             }
             break;
 
@@ -145,7 +145,7 @@
                         <li class="subnav">
                             <p class="subnavbtn">Recipes<i class="fa fa-caret-down"></i></p>
                             <div class="subnav-content">
-                                <a href="recipes.php?pagename=breakfast">Breakfast</a>
+                                <a href="content.php?pagename=breakfast">Breakfast</a>
                                 <a href="#">Lunch</a>
                                 <a href="#">Dinner</a>
                                 <a href="./recipes/snacks/snacks.php">Snacks</a>
