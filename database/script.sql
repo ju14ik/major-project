@@ -64,7 +64,8 @@ CREATE TABLE `contenttype` (
 
 INSERT INTO `contenttype`(`contenttype_name`) 
 VALUES ('Text'),
-('Recipe')
+('Recipe'),
+('Homepage text with image')
 
 ----------------------------------------------------------
 

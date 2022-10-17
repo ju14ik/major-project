@@ -13,7 +13,7 @@
                 </h1>
 
                 <?php
-
+                    // Content text
                     $text_sql = "SELECT content.content_id, content.title, content.description, content.content, category.category_name, contentcategorytype.contenttype_id
                     FROM `contentcategorytype` 
                         INNER JOIN content ON content.content_id=contentcategorytype.content_id
@@ -26,12 +26,13 @@
                     {
                         while($row = mysqli_fetch_assoc($text_result))
                         {
-                            echo '<div class="recipe-text">
+                            echo '<div class="content-text">
                             <p>'.$row['content'].'</p>
                             </div>';
                         }
                     }
 
+                    // Content block
                     $recipes_sql = "SELECT content.content_id, content.title, content.description, content.content, category.category_name, contentcategorytype.contenttype_id
                             FROM `contentcategorytype` 
                                 INNER JOIN content ON content.content_id=contentcategorytype.content_id
@@ -70,7 +71,8 @@
                                     <p></p>  
                                     
                                     <div class="roundup-button">
-                                        <a href="tropical-oatmeal.php">Read more</a>
+                                        <?php echo '<a href="detail.php?content_id='.$content_id.'">Read more</a>'; ?>
+                                        
                                     </div>  
                                 </div>
 

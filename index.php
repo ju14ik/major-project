@@ -23,9 +23,8 @@
                         // image of 'no image'?
                     }
                 ?>
-
-                <!-- <img src="./images/main/white-text.jpg" alt="" title="Easy backpacking healthy meal"/> -->
                 
+                <!-- Icons -->
                 <div class="icon-row">
 
                     <?php 
@@ -46,6 +45,7 @@
 
                 </div>
 
+                <!-- Main content -->
                 <div class='row'>
                     <div class='column'>
                         <div class='left-column'>
