@@ -7,6 +7,8 @@
 
             <main>
 
+                <h1>Quick and delicious hiking food recipes</h1>
+
                 <!-- Main image -->
                 <?php
                     $images_sql = "SELECT image_file_name, image_href FROM `images` 
@@ -24,6 +26,8 @@
                     }
                 ?>
                 
+                <h2>Going on a hike and don't know what food to bring and you are a foodie? Look no more, we have the best and healthiest recipes for you right here!</h2>
+
                 <!-- Icons -->
                 <div class="icon-row">
 
@@ -36,8 +40,12 @@
                             while($row = mysqli_fetch_assoc($icons_result))
                             {
                                 echo '<div class="icon">
-                                <a href="'.$row['image_href'].'"><img src="./images/'.$row['image_file_name'].'" alt=""></a>
-                                <a href="'.$row['image_href'].'"><h3>'.$row['image_description'].'</h3></a>
+                                <a href="'.$row['image_href'].'">
+                                <img src="./images/'.$row['image_file_name'].'" alt="">
+                                </a>
+                                <a href="'.$row['image_href'].'">
+                                <h3>'.$row['image_description'].'</h3>
+                                </a>
                                 </div>';
                             }
                         }

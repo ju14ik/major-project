@@ -235,7 +235,7 @@ footer > p {
 /* Main image */
 main > img {
     width: 100%;
-    padding-top: 50px;
+    padding-top: 2em;
 }
 
 /* Content */
@@ -270,7 +270,8 @@ main > img {
 .icon {
     padding: 30px 0;
     /* width: 200px; */
-    flex: 1 0 21%;
+    /* flex: 1 0 21%; */
+    flex: 1;
     text-align: center;
 }
 
@@ -467,17 +468,17 @@ main > img {
 /* Laptops */
 @media (min-width: 992px) {
     main, .container {
-        width: 70vw;
+        width: 50vw;
         margin: auto;
     }
 }
 
 
 main > h1 {
-    font-size: 2em;
+    font-size: 1.8em;
     text-transform: uppercase;
     text-align: center;
-    padding-bottom: 1em;
+    padding-top: 1em;
     /* z-index: 10; */
     /* line-height: 1.2em; */
 }
