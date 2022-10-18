@@ -68,16 +68,12 @@
                                     <h2>
                                         <?php echo $row['title']; ?>
                                     </h2>
-                                    <p></p>  
                                     
                                     <div class="roundup-button">
                                         <?php echo '<a href="detail.php?content_id='.$content_id.'">Read more</a>'; ?>
-                                        
                                     </div>  
                                 </div>
-
                             </div>
-
                 <?php
                         }
                     }

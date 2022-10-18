@@ -123,7 +123,7 @@
 
                     if(mysqli_num_rows($images_result) > 0)
                     {
-                        echo '<a href="'.$row['image_href'].'"><img src="./images/'.$images_result_fetch['image_file_name'].'" alt="" title=""></a>';                   
+                        echo '<a href="'.$images_result_fetch['image_href'].'"><img src="./images/'.$images_result_fetch['image_file_name'].'" alt="" title=""></a>';                   
                     }
                     else
                     {

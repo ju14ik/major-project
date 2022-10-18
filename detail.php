@@ -7,7 +7,7 @@
             }
         ?>
         <div class="wrapper">
-            <main>
+            <main class="recipe-details">
                 <?php
                     $images_sql = "SELECT image_file_name FROM `images` 
                             WHERE content_id = '$content_id' AND imagetype_id = 3 LIMIT 1";
@@ -23,19 +23,20 @@
                     $content_result = mysqli_query($connection ,$content_sql) or die("Query failed 1.1");
                     $content_result_fetch = mysqli_fetch_array($content_result);
 
+
                     if(mysqli_num_rows($images_result) > 0)
                     {
                         // Image
-                        echo '<img src="./images/'.$images_result_fetch['image_file_name'].'" alt="" title="">';  
+                        //echo '<img src="./images/'.$images_result_fetch['image_file_name'].'" alt="" title="">';  
+                        $image = '<img src="./images/'.$images_result_fetch['image_file_name'].'" alt="" title="">';  
                     }
 
                     if(mysqli_num_rows($content_result) > 0)
                     {
                         // Title + text
-                        echo '<h1>'.$content_result_fetch['title'].'</h1>
-                        <div class="content-text">
-                        <p>'.$content_result_fetch['content'].'</p>
-                        </div>';
+                        echo '<h1>'.$content_result_fetch['title'].'</h1>';
+                        echo $image;
+                        echo $content_result_fetch['content'];
                         
                     }
                     else {

@@ -248,6 +248,8 @@ main > img {
   
   .column {
     display: flex;
+    align-items: center;
+    margin: auto;
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
@@ -255,12 +257,12 @@ main > img {
   
   .left-column {
     background-color: blue;
-    height: 100px;
+    /* height: 100px; */
   }
   
   .right-column {
     background-color: green;
-    height: 100px;
+    /* height: 100px; */
   }
 
 
@@ -272,7 +274,7 @@ main > img {
     text-align: center;
 }
 
-.icon > h3 {
+.icon h3 {
     font-size: 1.4em;
 }
 
@@ -522,6 +524,7 @@ main > h1 {
     border-left: 1px solid #000;
 }
 .roundup-button {
+    width: 100px;
     display: inline-block;
     text-align: center;
     text-transform: uppercase;
@@ -539,8 +542,22 @@ main > h1 {
     text-decoration: none;
 }
 
-
 /* Recipes details */
 .recipe-details img {
     max-width: 400px;
+}
+
+.home-img {
+    width: 100%;
+}
+
+.column > h2 {
+    font-size: 1.6em;
+    font-family: ClearSansBold;
+}
+
+.icon > a, .icon > a:hover, .icon > a:visited, .icon > a:focus, .icon > a:active {
+    text-decoration: inherit;
+    color: inherit;
+    /* cursor: auto; */
 }
