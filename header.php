@@ -94,7 +94,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- Add fonts if needed -->
         <!-- Scripts -->
-        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <!-- <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script type="text/javascript">
 			$( document ).ready(function() {
                 $('.header').on('click', '.search-toggle', function(e) {
@@ -106,7 +106,7 @@
                 e.preventDefault();
                 });
 			});
-		</script>
+		</script> -->
 
     </head>
 	<body>
@@ -130,38 +130,12 @@
                         // image of 'no image'?
                     }
                 ?>
+           
+                <form action="" autocomplete="on">
+                    <input id="search" name="search" type="text" placeholder="What're we looking for ?">
+                    <!-- <input class="fa fa-search" id="search_submit" value="Rechercher" type="submit"> -->
+                    <button class="search-button" type="submit"><i class="fa fa-search fa-2x"></i></button>
+                </form>
 
-                <!-- Hamburger icon -->
-                <!-- <input class="side-menu" type="checkbox" id="side-menu"/>
-                <label class="hamb" for="side-menu"><span class="hamb-line"></span></label> -->
-        
-                <nav>
-                    <ul class="menu">
-                        <!-- <li><a href="#">Home</a></li>
-                        <li class="subnav">
-                            <p class="subnavbtn">Recipes<i class="fa fa-caret-down"></i></p>
-                            <div class="subnav-content">
-                                <a href="content.php?pagename=breakfast">Breakfast</a>
-                                <a href="#">Lunch</a>
-                                <a href="#">Dinner</a>
-                                <a href="./recipes/snacks/snacks.php">Snacks</a>
-                                <a href="#">Drinks</a>
-                                <a href="#">Stoveless meals</a>
-                                <a href="#">Stove cooked meals</a>
-                            </div>
-                        </li>
-                        <li><a href="#">Guides</a></li> -->
-
-                        <li>
-                            <div class="search-button">
-                                <a href="#" class="search-toggle" data-selector="#header-1"></a>
-                            </div>
-                        </li>
-                    </ul>
-                    <form action="" class="search-box">
-                    <input type="text" class="text search-input" placeholder="Type here to search..." />
-                    <!-- </form> -->
-                </nav>
-            
             </div>
         </header>

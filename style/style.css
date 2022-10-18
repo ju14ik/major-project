@@ -107,118 +107,6 @@ header img {
     height: auto;
 }
 
-/* Nav menu */
-nav {
-    width: 100%;
-    height: 100%;
-    /* position: fixed; */
-    background-color: #e7e7e7;
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height .5s ease-out;
-}
-
-.subnav-content > a {
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-}
-
-.menu > li > a, .menu p {
-    padding: 15px;
-    color: #212d42;
-}
-
-.menu a, .menu p {
-    display: block;
-    font-size: 1.4em;
-}
-
-.menu a:hover {
-    background-color: transparent;
-    color: #bf0911;
-}
-
-.subnav-content > a:hover {
-    background-color: #fff0f0;
-    /* opacity: 0.2; */
-    border: 1px solid #ffc5c8;
-    /* box-shadow: 1px 1px 5px 0px grey; */
-}
-
-/* Sub nav */
-.subnav-content {
-    background-color: #969696;
-    width: 100%;
-    z-index: 1;
-    padding: 20px 0 ;
-    display: none;
-}
-
-.subnav:hover .subnav-content {
-    display: block;
-}
-
-/* Menu Icon */
-.hamb {
-    cursor: pointer;
-    float: right;
-    padding: 50px 20px;
-}
-
-.hamb-line {
-    /* Hamburger middle line */
-    background: transparent;
-    display: block;
-    height: 2px;
-    position: relative;
-    width: 24px;
-}
-
-.hamb-line::before,
-.hamb-line::after{
-    /* Hamburger top and bottom lines */
-    background: #212d42;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
-}
-
-.hamb-line::before{
-    top: 5px;
-}
-
-.hamb-line::after{
-    top: -5px;
-}
-
-.side-menu {
-    display: none;
-}
-
-/* Toggle menu icon */
-.side-menu:checked ~ nav {
-    max-height: 100%;
-}
-
-.side-menu:checked ~ .hamb .hamb-line {
-    background: transparent;
-}
-
-.side-menu:checked ~ .hamb .hamb-line::before {
-    transform: rotate(-45deg);
-    top: 0;
-
-}
-
-.side-menu:checked ~ .hamb .hamb-line::after {
-    transform: rotate(45deg);
-    top:0;
-}
-
 /* Footer */
 footer {
     text-align: center;
@@ -294,99 +182,6 @@ main > img {
     height: 70px;
 }
 
-/* Search Box Button*/
-  .search-toggle {
-    /* padding: 80px 30px 10px 30px; */
-    position: relative;
-    display: block;
-    height: 10px;
-    width: 10px;
-  }
-  .search-toggle::before, .search-toggle::after {
-    content: '';
-    position: absolute;
-    display: block;
-    -webkit-transition: all 0.1s;
-    transition: all 0.1s;
-  }
-  .search-toggle::before {
-    border: 2px solid #5b3256;
-    border-radius: 50%;
-    width: 100%;
-    height: 100%;
-    left: -2px;
-    top: -2px;
-  }
-  .search-toggle::after {
-    height: 2px;
-    width: 7px;
-    background: #5b3256;
-    top: 10px;
-    left: 8px;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-  }
-  .search-toggle.active::before {
-    width: 0;
-    border-width: 1px;
-    border-radius: 0;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-    top: -1px;
-    left: 4px;
-  }
-  .search-toggle.active::after {
-    width: 12px;
-    left: -1px;
-    top: 4px;
-  }
-  .search-input:focus {
-    outline: none;
-  }
-  
-  
-  /* Search box */
-  /* #header-1 {
-      background: #ECF0F1 none repeat scroll 0 0;
-  } */
-  
-  #header-1 .search-box {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    max-height: 0;
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
-    background-color: #C9C8C8;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-  #header-1 .search-box .search-input {
-    width: 100%;
-    height: 100%;
-    padding: 0 1em;
-    border: 0;
-    background-color: transparent;
-    opacity: 0;
-    color: #fff;
-  }
-  #header-1 .search-box .search-input::-webkit-input-placeholder {
-    color: #fff;
-    font-size: 1.4em;
-  }
-  #header-1 .search-box {
-    max-height: 40px;
-    padding:5px 0;
-  }
-  #header-1 .search-box .search-input {
-    opacity: 1;
-}
-
-.search-button {
-    visibility: collapse;
-}
-
 
 /* Responsiveness */
 /* Small phones */
@@ -398,71 +193,6 @@ main > img {
 }
 
 @media (min-width: 768px) {
-    nav {
-        max-height: none;
-        top: 0;
-        position: relative;
-        float: right;
-        width: fit-content;
-        background-color: transparent;
-        /* For search bar */
-        overflow: visible;
-    }
-
-    .subnav-content > a {
-        padding: 10px;
-        color: #212d42;
-    }
-
-    .menu > li > a, .menu p {
-        padding: 45px 30px 10px 30px;
-        color: #212d42;
-    }
-
-    .menu a, .menu p {
-        display: block;
-    }
-
-    .menu li {
-        float: left;
-    }
-    
-    .hamb {
-        display: none;
-    }
-
-    /* Sub nav */
-    .subnav-content {
-        padding: 20px 0 ;
-        display: none;
-        background-color:  #f9f9f9;
-        position: absolute;
-        width: auto;
-    }
-
-
-    /* Search box */
-    .search-button {
-        padding: 55px 10px 0 0;
-        visibility: visible;
-      }
-
-    #header-1 .search-box {
-        max-height: 0;
-        padding: 0;
-      }
-      #header-1 .search-box .search-input {
-        opacity: 0;
-    }
-
-
-    #header-1.show .search-box {
-        max-height: 40px;
-        padding:5px 0;
-      }
-      #header-1.show .search-box .search-input {
-        opacity: 1;
-    }
 }
 
 /* Laptops */
@@ -561,4 +291,54 @@ main > h1 {
     text-decoration: inherit;
     color: inherit;
     /* cursor: auto; */
+}
+
+
+/* SEARCH */
+input[type="text"] {
+    height: 33px;
+    font-size: 1.4em;
+    display: inline-block;
+    border: none;
+    outline: none;
+    /* color: #555; */
+    padding: 3px;
+    padding-right: 30px;
+    width: 0px;
+    position: absolute;
+    bottom: 10px;
+    /* top: 0; */
+    right: 0;
+    background: none;
+    z-index: 3;
+    transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+    cursor: pointer;
+    /* background: red; */
+  }
+  
+  input[type="text"]:focus:hover {
+    border-bottom: 1px solid #BBB;
+  }
+  
+  input[type="text"]:focus {
+    width: 400px;
+    z-index: 1;
+    border-bottom: 1px solid #BBB;
+    cursor: text;
+  }
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.search-button {
+    height: 37px;
+    width: 33px;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    border: none;
+    background: none;
 }
