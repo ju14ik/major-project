@@ -16,10 +16,10 @@ VALUES
 ('icons/dessert.png','Dessert','content.php?pagename=dessert','image_alt','4',NULL),
 ('icons/drinks.png','Drinks','content.php?pagename=drinks','image_alt','4',NULL),
 -- HOME PAGE CONTENT --
-('image_not_available.png','','','image_alt','2','1'),
-('image_not_available.png','','','image_alt','2','2'),
-('image_not_available.png','','','image_alt','2','3'),
-('image_not_available.png','','','image_alt','2','4');
+('breakfast/oatmeal.jpg','','','image_alt','2','1'),
+('breakfast/oatmeal.jpg','','','image_alt','2','2'),
+('breakfast/oatmeal.jpg','','','image_alt','2','3'),
+('breakfast/oatmeal.jpg','','','image_alt','2','4');
 -- BREAKFAST --
 -- LUNCH --
 -- DINNER --
