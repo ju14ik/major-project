@@ -64,6 +64,7 @@
                                     WHERE content_id = '$content_id' AND imagetype_id = 2 LIMIT 1";
                             $images_result = mysqli_query($connection ,$images_sql) or die("Query failed 1.3");
                             $images_result_fetch = mysqli_fetch_array($images_result);
+                            $content_img = '';
 
                             if(mysqli_num_rows($images_result) > 0)
                             {

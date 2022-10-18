@@ -22,7 +22,7 @@
                     WHERE content.content_id = '$content_id' LIMIT 1";
                     $content_result = mysqli_query($connection ,$content_sql) or die("Query failed 1.1");
                     $content_result_fetch = mysqli_fetch_array($content_result);
-
+                    $image = '';
 
                     if(mysqli_num_rows($images_result) > 0)
                     {
