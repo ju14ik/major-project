@@ -33,11 +33,11 @@ VALUES
 ('breakfast/oatmeal.jpg','','','image_alt','3','7'),
 -- SNACKS --
 -- Thumbnails --
-('snacks/cheese-and-meat-platter.jpg','','','image_alt','2','8'),
-('snacks/chocolate-cherry-trail-mix.jpg','','','image_alt','2','9'),
+('snacks/chocolate-cherry-trail-mix.jpg','','','image_alt','2','8'),
+('snacks/cheese-and-meat-platter.jpg','','','image_alt','2','9'),
 -- Full size images --
-('snacks/cheese-and-meat-platter.jpg','','','image_alt','3','8'),
-('snacks/chocolate-cherry-trail-mix.jpg','','','image_alt','3','9'),
+('snacks/chocolate-cherry-trail-mix.jpg','','','image_alt','3','8'),
+('snacks/cheese-and-meat-platter.jpg','','','image_alt','3','9'),
 -- DESSERT --
 -- Thumbnails --
 ('desserts/chia-pudding.jpg','','','image_alt','2','10'),

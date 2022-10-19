@@ -94,7 +94,7 @@ main, .container {
     font-size: 1.4em;
     margin-top: 2em;
     text-align: center;
-    background-color: #f0f0f0;
+    background-color: #efefef;
     padding: 1.4em 0;
     line-height: 1.2em;
 }
@@ -112,7 +112,7 @@ main, .container {
 
 /* Header */
 header {
-    background-color: #fff;
+    /* background-color: #fff; */
     border-bottom: 1px solid #cccccc;
     position: sticky;
     top: 0;
@@ -210,7 +210,7 @@ footer > p {
     width: 100%;
     margin: 1em auto;
     padding-bottom: 0.8em;
-    background-color: #f0f0f0;
+    background-color: #efefef;
     /* background-color: #f9f9f9; */
 }
 
@@ -225,7 +225,7 @@ footer > p {
 /* Details page */
 .details > h3 {
     font-size: 1.2em;
-    background-color: #f0f0f0;
+    background-color: #efefef;
     /* background-color: #f9f9f9; */
     padding: 1em 0;
     font-family: ClearSansBold;
