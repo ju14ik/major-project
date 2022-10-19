@@ -65,9 +65,11 @@
                                 ?> 
 
                                 <div class="info">
-                                    <h2>
-                                        <?php echo $row['title']; ?>
-                                    </h2>
+                                    <?php 
+                                        echo '<h2>'.$row['title'].'</h2>';
+                                        echo $row['description']; 
+                                    ?>
+                                    
                                     
                                     <div class="roundup-button">
                                         <?php echo '<a href="detail.php?content_id='.$content_id.'">Read more</a>'; ?>
@@ -79,7 +81,7 @@
                     }
                     else
                     {
-                        echo "<h2>No content found!</h2>";
+                        echo '<h3 class="no-content">No content found!</h3>';
                     }
                 ?>
             </main>

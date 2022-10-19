@@ -28,7 +28,7 @@
                         }
                     }
                     else {
-                        echo "<h2>No content found!</h2>";
+                        echo '<h3 class="no-content">No content found!</h3>';
                     }
                 ?>  
 
