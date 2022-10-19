@@ -1,9 +1,25 @@
 <?php 
             include 'header.php'; 
             include "connect.php";
+            $content_id = 0;
+            $start_content_id = 0;
+            $end_content_id = 0;
+            $pagename = '';
             if(isset($_GET['content_id']))
             {
                 $content_id = $_GET['content_id'];
+            }
+            if(isset($_GET['pagename']))
+            {
+                $pagename = $_GET['pagename'];
+            }
+            if(isset($_GET['start_content_id']))
+            {
+                $start_content_id = $_GET['start_content_id'];
+            }
+            if(isset($_GET['end_content_id']))
+            {
+                $end_content_id = $_GET['end_content_id'];
             }
         ?>
         <div class="wrapper">
@@ -25,15 +41,12 @@
                     $image = '';
 
                     if(mysqli_num_rows($images_result) > 0)
-                    {
-                        // Image
-                        //echo '<img src="./images/'.$images_result_fetch['image_file_name'].'" alt="" title="">';  
+                    {                    
                         $image = '<img src="./images/'.$images_result_fetch['image_file_name'].'" alt="" title="">';  
                     }
 
                     if(mysqli_num_rows($content_result) > 0)
                     {
-                        // Title + text
                         echo '<h1>'.$content_result_fetch['title'].'</h1>';
                         echo $image;
                         echo $content_result_fetch['content'];
@@ -44,6 +57,22 @@
                     }
                 ?>  
 
+                    <?php 
+                        if($start_content_id > 0 && $end_content_id > 0) {
+                            if($start_content_id == $content_id && $end_content_id == $content_id) {
+                                //Back button
+                                echo '<a href="content.php?pagename='.$pagename.'">Back</a>';
+                            }
+                            if($start_content_id < $content_id) {
+                                //Previous button
+                                echo '<a href="detail.php?content_id='.($content_id-1).'&start_content_id='.$start_content_id.'&end_content_id='.$end_content_id.'"><-- Previous</a>'; 
+                            }
+                            if($end_content_id > $content_id) {
+                                //Next button
+                                echo '<a href="detail.php?content_id='.($content_id+1).'&start_content_id='.$start_content_id.'&end_content_id='.$end_content_id.'">Next --></a>'; 
+                            }
+                        }
+                    ?>
             </main>
             <?php include 'footer.php'; ?>
         </div>

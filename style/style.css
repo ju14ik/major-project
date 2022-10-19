@@ -136,7 +136,7 @@ header img {
 /* Footer */
 footer {
     text-align: center;
-    /* background-color: #C9C8C8; */
+    background-color: #fff;
     border-top: 1px solid #cccccc;
     position: absolute;
     bottom: 0;
@@ -223,6 +223,11 @@ footer > p {
 }
 
 /* Details page */
+.details p {
+    line-height: 1.2em;
+    padding-top: 1em;
+}
+
 .details > h3 {
     font-size: 1.2em;
     background-color: #efefef;
@@ -251,7 +256,7 @@ footer > p {
 }
 
 .details img {
-    max-width: 400px;
+    max-width: 400px;   
 }
 
 /* Recipe info */

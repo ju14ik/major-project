@@ -43,6 +43,7 @@
 
                     if(mysqli_num_rows($recipes_result) > 0)
                     {
+                        $index = 0;
                         while($row = mysqli_fetch_assoc($recipes_result))
                         {
                             $content_id = $row['content_id'];
@@ -71,11 +72,23 @@
                                     ?>
                                     
                                     <div class="readmore-button">
-                                        <?php echo '<a href="detail.php?content_id='.$content_id.'">Read more</a>'; ?>
+                                        <?php 
+                                            $start_content_id = 0;
+                                            $end_content_id = 0;
+
+                                            if($index == 0) {
+                                                $start_content_id = $content_id;
+                                            }
+                                            if(mysqli_num_rows($recipes_result) > 0) {
+                                                $end_content_id = $start_content_id+(mysqli_num_rows($recipes_result)-1);
+                                            }
+                                            echo '<a href="detail.php?content_id='.$content_id.'&pagename='.$pagename.'&start_content_id='.$start_content_id.'&end_content_id='.$end_content_id.'">Read more</a>'; 
+                                        ?>
                                     </div>  
                                 </div>
                             </div>
                 <?php
+                            $index++;
                         }
                     }
                     else
@@ -83,6 +96,7 @@
                         echo '<h3 class="no-content">No content found!</h3>';
                     }
                 ?>  
+                <a href="index.php">Back</a>
             </main>
             <?php include 'footer.php'; ?>
         </div>
