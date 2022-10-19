@@ -20,7 +20,7 @@
                         INNER JOIN category ON category.category_id=contentcategorytype.category_id
                         INNER JOIN contenttype ON contenttype.contenttype_id=contentcategorytype.contenttype_id
                     WHERE (category.category_name = '$pagename' OR '$pagename' = '') AND contentcategorytype.contenttype_id = '1'";
-                    $text_result = mysqli_query($connection ,$text_sql) or die("Query failed 1.1");
+                    $text_result = mysqli_query($connection ,$text_sql) or die("Text query failed");
 
                     if(mysqli_num_rows($text_result) > 0)
                     {
@@ -39,7 +39,7 @@
                                 INNER JOIN category ON category.category_id=contentcategorytype.category_id
                                 INNER JOIN contenttype ON contenttype.contenttype_id=contentcategorytype.contenttype_id
                             WHERE (category.category_name = '$pagename' OR '$pagename' = '') AND contentcategorytype.contenttype_id = '2'";
-                    $recipes_result = mysqli_query($connection ,$recipes_sql) or die("Query failed 1.2");
+                    $recipes_result = mysqli_query($connection ,$recipes_sql) or die("Recipes query failed");
 
                     if(mysqli_num_rows($recipes_result) > 0)
                     {
@@ -48,7 +48,7 @@
                             $content_id = $row['content_id'];
                             $images_sql = "SELECT image_file_name FROM `images` 
                                     WHERE content_id = '$content_id' AND imagetype_id = 2 LIMIT 1";
-                            $images_result = mysqli_query($connection ,$images_sql) or die("Query failed 1.3");
+                            $images_result = mysqli_query($connection ,$images_sql) or die("Images query failed");
                             $images_result_fetch = mysqli_fetch_array($images_result);
                 ?>  
                             <div class="recipe">
