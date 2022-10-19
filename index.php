@@ -60,7 +60,7 @@
                         INNER JOIN content ON content.content_id=contentcategorytype.content_id
                         INNER JOIN category ON category.category_id=contentcategorytype.category_id
                         INNER JOIN contenttype ON contenttype.contenttype_id=contentcategorytype.contenttype_id
-                    WHERE category.category_id = '1' AND contentcategorytype.contenttype_id = '3'";
+                    WHERE category.category_id = '2' AND contentcategorytype.contenttype_id = '3'";
                     $content_result = mysqli_query($connection ,$content_sql) or die("Home page query failed");
 
                     if(mysqli_num_rows($content_result) > 0)

@@ -65,10 +65,11 @@ table {
 /* Body */
 body, html {
     max-width: 3000px;
-    height: 100vh;
+    min-height: 100vh;
     margin: auto;
     font-family: ClearSansRegular;
     color: #212d42;
+    position: relative;
 }
 
 /* Wrapper and main */
@@ -76,6 +77,10 @@ main, .wrapper {
     /* height: 100vh; */
     /* temp */
     /* box-shadow: 1px 1px 5px 0px grey; */
+}
+
+main {
+    padding-bottom: 5em;
 }
 
 main, .container {
@@ -110,13 +115,17 @@ header img {
 /* Footer */
 footer {
     text-align: center;
-    background-color: #C9C8C8;
-    margin-top: auto;
+    /* background-color: #C9C8C8; */
+    border-top: 1px solid #cccccc;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     /* position: sticky;
     bottom: 0; */
 }
 footer > p {
     padding: 1em 0;
+    font-size: 0.9em;
     /* color: #fff; */
 }
 
@@ -341,5 +350,17 @@ input[type="text"] {
     right: 0;
     border: none;
     background: none;
-    opacity: .5;
+    /* opacity: .5; */
+}
+
+.fa-search {
+    color: #212d42;
+}
+
+.search {
+    padding: 2em 0;
+}
+
+.search-result-item {
+    padding-bottom: 0.8em;
 }

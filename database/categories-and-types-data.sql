@@ -3,13 +3,12 @@
 -- Data for `category` table
 INSERT INTO `category`(`category_name`)
 VALUES
-('homepage'),
+('homepage-headings'),
+('homepage-content'),
 ('breakfast'),
 ('lunch'),
 ('dinner'),
 ('snacks'),
-('stoveless-meals'),
-('stove-cooked-meals'),
 ('dessert'),
 ('drinks');
 

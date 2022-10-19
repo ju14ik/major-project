@@ -23,7 +23,6 @@
                         $index = 1;
                         while($row = mysqli_fetch_assoc($search_result))
                         {
-
                             echo '<div class="search-result-item">'.$index.': '.'<a href="detail.php?content_id='.$row['content_id'].'">'.$row['title'].'</a></div>';
                             $index++;
                         }

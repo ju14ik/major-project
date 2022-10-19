@@ -1,16 +1,12 @@
 -- DROP TABLES
 DROP TABLE IF EXISTS `category`,`content`,`contenttype`,`contentcategorytype`,`imagetype`,`images`;
 
-----------------------------------------------------------
-
 -- Table structure for table `category`
 CREATE TABLE `category` (
   `category_id` INT(30) NOT NULL AUTO_INCREMENT UNIQUE,
   `category_name` VARCHAR(100) NOT NULL,
   PRIMARY KEY (`category_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
-----------------------------------------------------------
 
 -- Table structure for table `content`
 CREATE TABLE `content` (
@@ -22,16 +18,12 @@ CREATE TABLE `content` (
   PRIMARY KEY (`content_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-----------------------------------------------------------
-
 -- Table structure for table `contenttype`
 CREATE TABLE `contenttype` (
   `contenttype_id` INT(30) NOT NULL AUTO_INCREMENT UNIQUE,
   `contenttype_name` VARCHAR(100) NOT NULL,
   PRIMARY KEY (`contenttype_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
-----------------------------------------------------------
 
 -- Table structure for table `contentcategorytype`
 CREATE TABLE `contentcategorytype` (
@@ -45,16 +37,12 @@ CREATE TABLE `contentcategorytype` (
   FOREIGN KEY(`contenttype_id`) REFERENCES contenttype(`contenttype_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-----------------------------------------------------------
-
 -- Table structure for table `imagetype`
 CREATE TABLE `imagetype` (
   `imagetype_id` INT(30) NOT NULL AUTO_INCREMENT UNIQUE,
   `imagetype_name` VARCHAR(100) NOT NULL,
   PRIMARY KEY (`imagetype_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
-----------------------------------------------------------
 
 -- Table structure for table `images`
 CREATE TABLE `images` (

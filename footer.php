@@ -1,5 +1,5 @@
         <footer>
-            <p>&copy; 2022 Julija Celinska</p>
+            <p>&copy; Julija Celinska 2022</p>
         </footer>
     </body>
 </html>
