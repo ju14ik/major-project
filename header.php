@@ -89,7 +89,7 @@
         <!-- Links -->
         <link rel="canonical" href="https://julija.uk/something/something.php" />
         <link rel="icon" type="image/x-icon" href="./images/hedgehog-4.png">
-        <link rel="stylesheet" href="style/style.css?version=3">
+        <link rel="stylesheet" href="style/style.css?version=4">
         <!-- Used by nav (arrow down) -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- Add fonts if needed -->
@@ -127,7 +127,7 @@
                     }
                     else
                     {
-                        // image of 'no image'?
+                        echo '<a href="'.$images_result_fetch['image_href'].'"><img src="./images/image_not_available.png" alt="" title=""></a>';        
                     }
                 ?>
            

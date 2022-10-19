@@ -60,7 +60,7 @@
                                     }
                                     else
                                     {
-                                        // image of 'no image'?
+                                        echo '<img src="./images/image_not_available.png" alt="" title="">'; 
                                     }
                                 ?> 
 

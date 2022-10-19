@@ -7,7 +7,28 @@
 
             <main>
 
-                <h1>Quick and delicious hiking food recipes</h1>
+                <?php
+                    $heading_sql = "SELECT content.content_id, content.title, content.description, content.content, category.category_name, contentcategorytype.contenttype_id
+                    FROM `contentcategorytype` 
+                        INNER JOIN content ON content.content_id=contentcategorytype.content_id
+                        INNER JOIN category ON category.category_id=contentcategorytype.category_id
+                        INNER JOIN contenttype ON contenttype.contenttype_id=contentcategorytype.contenttype_id
+                    WHERE category.category_id = '1' AND contentcategorytype.contenttype_id = '1' LIMIT 1";
+                    $heading_result = mysqli_query($connection ,$heading_sql) or die("Home page query failed");
+                    $heading_result_fetch = mysqli_fetch_array($heading_result);
+                    $heading_h1 = '';
+                    $heading_h2 = '';
+
+                    if(mysqli_num_rows($heading_result) > 0)
+                    {
+                        $heading_h1 = $heading_result_fetch['title'];
+                        $heading_h2 = $heading_result_fetch['content']; 
+                    }
+
+                    echo '<h1>'.$heading_h1.'</h1>';
+                ?>
+
+                <!-- <h1>Quick and delicious hiking food recipes</h1> -->
 
                 <!-- Main image -->
                 <?php
@@ -22,11 +43,13 @@
                     }
                     else
                     {
-                        // image of 'no image'?
+                        echo '<img src="./images/image_not_available.png" alt="" title="">'; 
                     }
+
+                    echo '<h2>'.$heading_h2.'</h2>';
                 ?>
                 
-                <h2>Going on a hike and don't know what food to bring and you are a foodie? Look no more, we have the best and healthiest recipes for you right here!</h2>
+                <!-- <h2>Going on a hike and don't know what food to bring and you are a foodie? Look no more, we have the best and healthiest recipes for you right here!</h2> -->
 
                 <!-- Icons -->
                 <div class="icon-row">

@@ -184,7 +184,7 @@ main > img {
     justify-content: center;
     border-top: 1px solid #cccccc;
     border-bottom: 1px solid #cccccc;
-    margin: 60px 0;
+    margin: 3em 0;
 }
 
 .icon img {
@@ -220,6 +220,14 @@ main > h1 {
     padding-top: 1em;
     /* z-index: 10; */
     /* line-height: 1.2em; */
+}
+
+main > h2 {
+    font-size: 1.4em;
+    margin-top: 2em;
+    text-align: center;
+    background-color: #ececec;
+    padding: 1.4em 0;
 }
 
 /* Recipe */
