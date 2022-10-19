@@ -107,7 +107,7 @@
                                 echo '<div class="row">
                                 <div class="column">
                                 <h2>'.$row['title'].'</h2>
-                                <div class="roundup-button">
+                                <div class="readmore-button">
                                 <a href="detail.php?content_id='.$content_id.'">Read more</a>
                                 </div>
                                 </div>'
@@ -119,7 +119,7 @@
                                 .$content_img.
                                 '<div class="column">
                                 <h2>'.$row['title'].'</h2>
-                                <div class="roundup-button">
+                                <div class="readmore-button">
                                 <a href="detail.php?content_id='.$content_id.'">Read more</a>
                                 </div>
                                 </div>

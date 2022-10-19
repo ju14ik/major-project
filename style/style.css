@@ -72,13 +72,7 @@ body, html {
     position: relative;
 }
 
-/* Wrapper and main */
-main, .wrapper {
-    /* height: 100vh; */
-    /* temp */
-    /* box-shadow: 1px 1px 5px 0px grey; */
-}
-
+/* Main */
 main {
     padding-bottom: 5em;
 }
@@ -87,14 +81,41 @@ main, .container {
     margin: auto;
 }
 
+/* Home page */
+.home-page > h1 {
+    font-size: 2.4em;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 1em;
+    line-height: 1.2em;
+}
+
+.home-page > h2 {
+    font-size: 1.4em;
+    margin-top: 2em;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 1.4em 0;
+    line-height: 1.2em;
+}
+
+.home-page > h2 > span {
+    color: #f65d38;
+}
+
+/* Main image */
+.home-page > img {
+    width: 100%;
+    padding-top: 2em;
+}
+
+
 /* Header */
 header {
     background-color: #fff;
-    /* box-shadow: 1px 1px 3px 0px #c1282f; */
     border-bottom: 1px solid #cccccc;
     position: sticky;
     top: 0;
-    /* width: 100%; */
 }
 
 header a {
@@ -129,51 +150,33 @@ footer > p {
     /* color: #fff; */
 }
 
-/* Main image */
-main > img {
-    width: 100%;
-    padding-top: 2em;
-}
-
 /* Content */
 .row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-  }
+}
   
-  .column {
+.column {
     display: flex;
     align-items: center;
     margin: auto;
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
-  }
-  
-  .left-column {
-    background-color: blue;
-    /* height: 100px; */
-  }
-  
-  .right-column {
-    background-color: green;
-    /* height: 100px; */
-  }
-
+}
 
 /* Icons */
 .icon {
     padding: 30px 0;
-    /* width: 200px; */
-    /* flex: 1 0 21%; */
     flex: 1;
     text-align: center;
 }
 
 .icon h3 {
     font-size: 1.4em;
+    margin-top: 0.1em;
 }
 
 .icon-row {
@@ -191,45 +194,7 @@ main > img {
     height: 70px;
 }
 
-
-/* Responsiveness */
-/* Small phones */
-@media (min-width: 280px) {
-}
-
-/* Tablets */
-@media (min-width: 768px) {
-}
-
-@media (min-width: 768px) {
-}
-
-/* Laptops */
-@media (min-width: 992px) {
-    main, .container {
-        width: 50vw;
-        margin: auto;
-    }
-}
-
-
-main > h1 {
-    font-size: 1.8em;
-    text-transform: uppercase;
-    text-align: center;
-    padding-top: 1em;
-    /* z-index: 10; */
-    /* line-height: 1.2em; */
-}
-
-.home-page > h2 {
-    font-size: 1.4em;
-    margin-top: 2em;
-    text-align: center;
-    background-color: #f0f0f0;
-    padding: 1.4em 0;
-}
-
+/* No content message */
 .no-content {
     font-size: 1.2em;
     background-color: #f8afaf;
@@ -245,12 +210,10 @@ main > h1 {
     width: 100%;
     margin: 1em auto;
     padding-bottom: 0.8em;
-    background-color: #f9f9f9;
+    background-color: #f0f0f0;
+    /* background-color: #f9f9f9; */
 }
-/* .recipe {
-    display: block;
-    overflow: auto;
-} */
+
 .recipe > img {
     /* width: 40%; */
     max-width: 300px;
@@ -259,41 +222,56 @@ main > h1 {
     float: left;
 }
 
-.recipe-details > h3 {
+/* Details page */
+.details > h3 {
     font-size: 1.2em;
-    background-color: #f9f9f9;
+    background-color: #f0f0f0;
+    /* background-color: #f9f9f9; */
     padding: 1em 0;
     font-family: ClearSansBold;
     text-align: center;
     margin: 0.5em 0;
 }
 
-.recipe-details ul {
+.details ul {
     list-style-type: circle;
     margin-left: 3em;
 }
 
-.recipe-details li:not(:last-child) { 
+.details li:not(:last-child) { 
     margin-bottom: 0.3em;  
 }
 
-/* .recipe li {
-    display: inline;
-} */
+.details > h1, .content > h1 {
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1em 0;
+    line-height: 1.2em;
+}
+
+.details img {
+    max-width: 400px;
+}
+
+/* Recipe info */
 .info {
     margin: 1em 0;
 }
+
 .info > img {
     display: block;
     margin: 0.8em 0;
-    /* overflow: auto; */
 }
+
 .info > ul {
     margin-top: 1em;
 }
+
 .info li, .nutrition li {
     display: inline-block;
 }
+
 .info li:not(:first-child), .nutrition li:not(:first-child) {  
     padding-left: 0.2em;
     border-left: 1px solid #000;
@@ -313,7 +291,8 @@ main > h1 {
     line-height: 1.4em;
 }
 
-.roundup-button {
+/* Buttons */
+.readmore-button, .goback-button {
     width: 100px;
     display: inline-block;
     text-align: center;
@@ -323,16 +302,19 @@ main > h1 {
     margin: 1.4em 0;
     padding: 5px 10px;
     outline: 2px solid #f65d38;
+    border-radius: 10px;
 }
-.roundup-button > a {
+
+.readmore-button > a, .goback-button > a {
     color: #f65d38;
     text-decoration: none;
 }
 
-/* Recipes details */
-.recipe-details img {
-    max-width: 400px;
+.goback-button {
+    margin: auto 0;
 }
+
+/* TODO */
 
 .home-img {
     width: 100%;
@@ -410,4 +392,25 @@ input[type="text"] {
 
 .search-result-item {
     padding-bottom: 0.8em;
+}
+
+
+/* Responsiveness */
+/* Small phones */
+@media (min-width: 280px) {
+}
+
+/* Tablets */
+@media (min-width: 768px) {
+}
+
+@media (min-width: 768px) {
+}
+
+/* Laptops */
+@media (min-width: 992px) {
+    main, .container {
+        width: 50vw;
+        margin: auto;
+    }
 }

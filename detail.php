@@ -7,7 +7,7 @@
             }
         ?>
         <div class="wrapper">
-            <main class="recipe-details">
+            <main class="details">
                 <?php
                     $images_sql = "SELECT image_file_name FROM `images` 
                             WHERE content_id = '$content_id' AND imagetype_id = 3 LIMIT 1";

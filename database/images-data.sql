@@ -15,15 +15,15 @@ VALUES
 ('icons/drinks.png','Drinks','content.php?pagename=drinks','image_alt','4',NULL),
 -- HOME PAGE CONTENT --
 -- Thumbnails --
-('breakfast/oatmeal.jpg','','','image_alt','2','2'),
-('breakfast/oatmeal.jpg','','','image_alt','2','3'),
-('breakfast/oatmeal.jpg','','','image_alt','2','4'),
-('breakfast/oatmeal.jpg','','','image_alt','2','5'),
+('main/best-foods.jpg','','','image_alt','2','2'),
+('main/right-calories.jpg','','','image_alt','2','3'),
+('main/right-nutrition.jpg','','','image_alt','2','4'),
+('main/how-often-to-eat.jpg','','','image_alt','2','5'),
 -- Full size images --
-('breakfast/oatmeal.jpg','','','image_alt','3','2'),
-('breakfast/oatmeal.jpg','','','image_alt','3','3'),
-('breakfast/oatmeal.jpg','','','image_alt','3','4'),
-('breakfast/oatmeal.jpg','','','image_alt','3','5'),
+('main/best-foods.jpg','','','image_alt','3','2'),
+('main/right-calories.jpg','','','image_alt','3','3'),
+('main/right-nutrition.jpg','','','image_alt','3','4'),
+('main/how-often-to-eat.jpg','','','image_alt','3','5'),
 -- BREAKFAST --
 -- Thumbnails --
 ('breakfast/avocado-toast.jpg','','','image_alt','2','6'),
@@ -55,15 +55,16 @@ VALUES
 -- Full size images --
 ('drinks/cold-coffee.jpg','','','image_alt','3','13'),
 ('drinks/strawberry-smoothie.jpg','','','image_alt','3','14'),
-('drinks/cold-brew-tea.jpg','','','image_alt','3','15');
--- LUNCH --
+('drinks/cold-brew-tea.jpg','','','image_alt','3','15'),
 -- DINNER --
--- STOVE COOKED MEALS --
-
--- STOVELESS MEALS --
 -- Thumbnails --
--- ('stoveless-meals/guacamole-bruschetta.jpg','','','image_alt','2','9'),
--- ('stoveless-meals/roast-beef-sandwich.jpg','','','image_alt','2','10'),
+('dinner/guacamole-bruschetta.jpg','','','image_alt','2','16'),
 -- Full size images --
--- ('stoveless-meals/guacamole-bruschetta.jpg','','','image_alt','3','9'),
--- ('stoveless-meals/roast-beef-sandwich.jpg','','','image_alt','3','10'),
+('dinner/guacamole-bruschetta.jpg','','','image_alt','3','16'),
+-- LUNCH --
+-- Thumbnails --
+('lunch/roast-beef-sandwich.jpg','','','image_alt','2','17'),
+-- Full size images --
+('lunch/roast-beef-sandwich.jpg','','','image_alt','3','17');
+
+

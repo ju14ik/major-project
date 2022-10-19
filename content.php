@@ -7,7 +7,7 @@
             }
         ?>
         <div class="wrapper">
-            <main>
+            <main class="content">
                 <h1>
                     <?php echo str_replace("-", " ", $pagename); ?>
                 </h1>
@@ -70,8 +70,7 @@
                                         echo $row['description']; 
                                     ?>
                                     
-                                    
-                                    <div class="roundup-button">
+                                    <div class="readmore-button">
                                         <?php echo '<a href="detail.php?content_id='.$content_id.'">Read more</a>'; ?>
                                     </div>  
                                 </div>
@@ -83,7 +82,7 @@
                     {
                         echo '<h3 class="no-content">No content found!</h3>';
                     }
-                ?>
+                ?>  
             </main>
             <?php include 'footer.php'; ?>
         </div>
