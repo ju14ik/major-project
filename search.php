@@ -31,7 +31,7 @@
                         echo '<h3 class="no-content">No content found!</h3>';
                     }
                 ?>  
-
+                <div class="nav-button back"><a href="index.php">Back</a></div>
             </main>
             <?php include 'footer.php'; ?>
         </div>

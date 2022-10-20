@@ -1,6 +1,7 @@
         <?php 
             include 'header.php'; 
             include "connect.php";
+            $pagename = '';
             if(isset($_GET['pagename']))
             {
                 $pagename = $_GET['pagename'];
@@ -14,37 +15,39 @@
 
                 <?php
                     // Content text
-                    $text_sql = "SELECT content.content_id, content.title, content.description, content.content, category.category_name, contentcategorytype.contenttype_id
-                    FROM `contentcategorytype` 
-                        INNER JOIN content ON content.content_id=contentcategorytype.content_id
-                        INNER JOIN category ON category.category_id=contentcategorytype.category_id
-                        INNER JOIN contenttype ON contenttype.contenttype_id=contentcategorytype.contenttype_id
-                    WHERE (category.category_name = '$pagename' OR '$pagename' = '') AND contentcategorytype.contenttype_id = '1'";
-                    $text_result = mysqli_query($connection ,$text_sql) or die("Text query failed");
+                    // $text_sql = "SELECT content.content_id, content.title, content.description, content.content, category.category_name, contentcategorytype.contenttype_id
+                    // FROM `contentcategorytype` 
+                    //     INNER JOIN content ON content.content_id=contentcategorytype.content_id
+                    //     INNER JOIN category ON category.category_id=contentcategorytype.category_id
+                    //     INNER JOIN contenttype ON contenttype.contenttype_id=contentcategorytype.contenttype_id
+                    // WHERE (category.category_name = '$pagename' OR '$pagename' = '') AND contentcategorytype.contenttype_id = '1'";
+                    // $text_result = mysqli_query($connection ,$text_sql) or die("Text query failed");
 
-                    if(mysqli_num_rows($text_result) > 0)
-                    {
-                        while($row = mysqli_fetch_assoc($text_result))
-                        {
-                            echo '<div class="content-text">
-                            <p>'.$row['content'].'</p>
-                            </div>';
-                        }
-                    }
+                    // if(mysqli_num_rows($text_result) > 0)
+                    // {
+                    //     while($row = mysqli_fetch_assoc($text_result))
+                    //     {
+                    //         echo '<div class="content-text">
+                    //         <p>'.$row['content'].'</p>
+                    //         </div>';
+                    //     }
+                    // }
 
                     // Content block
-                    $recipes_sql = "SELECT content.content_id, content.title, content.description, content.content, category.category_name, contentcategorytype.contenttype_id
+                    $content_sql = "SELECT content.content_id, content.title, content.description, content.content, category.category_name, contentcategorytype.contenttype_id
                             FROM `contentcategorytype` 
                                 INNER JOIN content ON content.content_id=contentcategorytype.content_id
                                 INNER JOIN category ON category.category_id=contentcategorytype.category_id
                                 INNER JOIN contenttype ON contenttype.contenttype_id=contentcategorytype.contenttype_id
                             WHERE (category.category_name = '$pagename' OR '$pagename' = '') AND contentcategorytype.contenttype_id = '2'";
-                    $recipes_result = mysqli_query($connection ,$recipes_sql) or die("Recipes query failed");
+                    $content_result = mysqli_query($connection ,$content_sql) or die("Recipes query failed");
 
-                    if(mysqli_num_rows($recipes_result) > 0)
+                    if(mysqli_num_rows($content_result) > 0)
                     {
                         $index = 0;
-                        while($row = mysqli_fetch_assoc($recipes_result))
+                        $start_content_id = 0;
+                        $end_content_id = 0;
+                        while($row = mysqli_fetch_assoc($content_result))
                         {
                             $content_id = $row['content_id'];
                             $images_sql = "SELECT image_file_name FROM `images` 
@@ -73,14 +76,11 @@
                                     
                                     <div class="readmore-button">
                                         <?php 
-                                            $start_content_id = 0;
-                                            $end_content_id = 0;
-
                                             if($index == 0) {
                                                 $start_content_id = $content_id;
-                                            }
-                                            if(mysqli_num_rows($recipes_result) > 0) {
-                                                $end_content_id = $start_content_id+(mysqli_num_rows($recipes_result)-1);
+                                                                                           }
+                                            if(mysqli_num_rows($content_result) > 0) {
+                                                $end_content_id = $start_content_id+(mysqli_num_rows($content_result)-1);
                                             }
                                             echo '<a href="detail.php?content_id='.$content_id.'&pagename='.$pagename.'&start_content_id='.$start_content_id.'&end_content_id='.$end_content_id.'">Read more</a>'; 
                                         ?>
@@ -96,7 +96,7 @@
                         echo '<h3 class="no-content">No content found!</h3>';
                     }
                 ?>  
-                <a href="index.php">Back</a>
+                <div class="nav-button back"><a href="index.php">Back</a></div>
             </main>
             <?php include 'footer.php'; ?>
         </div>

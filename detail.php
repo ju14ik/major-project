@@ -61,16 +61,19 @@
                         if($start_content_id > 0 && $end_content_id > 0) {
                             if($start_content_id == $content_id && $end_content_id == $content_id) {
                                 //Back button
-                                echo '<a href="content.php?pagename='.$pagename.'">Back</a>';
+                                echo '<div class="nav-button back"><a href="content.php?pagename='.$pagename.'">Back</a></div>';
                             }
                             if($start_content_id < $content_id) {
                                 //Previous button
-                                echo '<a href="detail.php?content_id='.($content_id-1).'&start_content_id='.$start_content_id.'&end_content_id='.$end_content_id.'"><-- Previous</a>'; 
+                                echo '<div class="nav-button previous"><a href="detail.php?content_id='.($content_id-1).'&start_content_id='.$start_content_id.'&end_content_id='.$end_content_id.'">&laquo; Previous</a></div>'; 
                             }
                             if($end_content_id > $content_id) {
                                 //Next button
-                                echo '<a href="detail.php?content_id='.($content_id+1).'&start_content_id='.$start_content_id.'&end_content_id='.$end_content_id.'">Next --></a>'; 
+                                echo '<div class="nav-button next"><a href="detail.php?content_id='.($content_id+1).'&start_content_id='.$start_content_id.'&end_content_id='.$end_content_id.'">Next &raquo;</a></div>'; 
                             }
+                        }
+                        else {
+                            echo '<div class="nav-button back"><a href="index.php">Back</a></div>';
                         }
                     ?>
             </main>
