@@ -257,6 +257,8 @@ footer > p {
 
 .details img {
     max-width: 400px;   
+    display: block;
+    margin: 0 auto;
 }
 
 /* Recipe info */
@@ -305,9 +307,9 @@ footer > p {
     text-decoration: none;
     font-weight: 700;
     margin: 1.4em 0;
-    padding: 5px 10px;
+    padding: 5px 20px;
     outline: 2px solid #f65d38;
-    border-radius: 10px;
+    border-radius: 14px;
 }
 
 .readmore-button > a, .goback-button > a {
@@ -326,9 +328,12 @@ footer > p {
 .nav-button > a {
     text-decoration: none;
     display: inline-block;
-    padding: 8px 16px;
     background-color: #f65d38;
     color: #fff;
+    border-radius: 14px;
+    width: 120px;
+    padding: 7px 0;
+    text-align: center;
 }
   
 .nav-button > a:hover {
