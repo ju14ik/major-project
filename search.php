@@ -9,7 +9,7 @@
         <div class="wrapper">
             <main class="search">
                 <?php
-                    // Content text
+                    // Content search
                     $search_sql = "SELECT content.content_id, content.title, content.description, content.content, category.category_name, contentcategorytype.contenttype_id
                     FROM `contentcategorytype` 
                         INNER JOIN content ON content.content_id=contentcategorytype.content_id

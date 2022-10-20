@@ -21,25 +21,6 @@
                 </h1>
 
                 <?php
-                    // Content text
-                    // $text_sql = "SELECT content.content_id, content.title, content.description, content.content, category.category_name, contentcategorytype.contenttype_id
-                    // FROM `contentcategorytype` 
-                    //     INNER JOIN content ON content.content_id=contentcategorytype.content_id
-                    //     INNER JOIN category ON category.category_id=contentcategorytype.category_id
-                    //     INNER JOIN contenttype ON contenttype.contenttype_id=contentcategorytype.contenttype_id
-                    // WHERE (category.category_name = '$pagename' OR '$pagename' = '') AND contentcategorytype.contenttype_id = '1'";
-                    // $text_result = mysqli_query($connection ,$text_sql) or die("Text query failed");
-
-                    // if(mysqli_num_rows($text_result) > 0)
-                    // {
-                    //     while($row = mysqli_fetch_assoc($text_result))
-                    //     {
-                    //         echo '<div class="content-text">
-                    //         <p>'.$row['content'].'</p>
-                    //         </div>';
-                    //     }
-                    // }
-
                     // Content block
                     $content_sql = "SELECT content.content_id, content.title, content.description, content.content, category.category_name, contentcategorytype.contenttype_id
                             FROM `contentcategorytype` 

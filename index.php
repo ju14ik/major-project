@@ -28,8 +28,6 @@
                     echo '<h1>'.$heading_h1.'</h1>';
                 ?>
 
-                <!-- <h1>Quick and delicious hiking food recipes</h1> -->
-
                 <!-- Main image -->
                 <?php
                     $images_sql = "SELECT image_file_name, image_href, image_alt FROM `images` 
@@ -49,8 +47,6 @@
                     echo '<h2>'.$heading_h2.'</h2>';
                 ?>
                 
-                <!-- <h2>Going on a hike and don't know what food to bring and you are a foodie? Look no more, we have the best and healthiest recipes for you right here!</h2> -->
-
                 <!-- Icons -->
                 <div class="icon-row">
 

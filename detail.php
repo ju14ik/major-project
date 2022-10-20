@@ -1,4 +1,4 @@
-<?php 
+        <?php 
             include 'header.php'; 
             include "connect.php";
             $content_id = 0;

@@ -12,60 +12,12 @@
             {
                 $page_title = "No content found";
             }
-            break;
-
-        // case 'single.php':
-        //     if(isset($_GET['id']))
-        //     {
-        //         $sql_title = "SELECT * FROM post WHERE post_id={$_GET['id']}";
-        //         $result_title = mysqli_query($connection , $sql_title);
-        //         $row_title = mysqli_fetch_assoc($result_title);
-        //         $page_title = $row_title['title'];
-        //     }
-        //     else
-        //     {
-        //         $page_title = "No post Found";
-
-        //     }
-        //     break;
-        // case 'category.php':
-        //     if(isset($_GET['cid']))
-        //     {
-        //         $sql_title = "SELECT * FROM category WHERE category_id={$_GET['cid']}";
-        //         $result_title = mysqli_query($connection , $sql_title);
-        //         $row_title = mysqli_fetch_assoc($result_title);
-        //         $page_title = $row_title['category_name'];
-        //     }
-        //     else
-        //     {
-        //         $page_title = "No post Found";
-
-        //     }
-        //     break;
-        // case 'author.php':
-        //     if(isset($_GET['aid']))
-        //     {
-        //         $sql_title = "SELECT * FROM user WHERE user_id={$_GET['aid']}";
-        //         $result_title = mysqli_query($connection , $sql_title);
-        //         $row_title = mysqli_fetch_assoc($result_title);
-        //         $page_title = $row_title['username'];
-        //     }
-        //     else
-        //     {
-        //         $page_title = "No post Found";
-
-        //     }
-        //     break;
-        // case 'search.php':
-        //     $page_title = $_GET['search'];
-        //     break;
-        
+            break;       
         default:
             $page_title = $default_page_title;
             break;
     }
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
