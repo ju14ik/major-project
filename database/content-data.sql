@@ -1,5 +1,7 @@
 -- Data for `content` table --
 
+TRUNCATE TABLE `content`;
+
 INSERT INTO `content`(`title`, `description`, `content`) 
 VALUES 
 -- HOME PAGE --

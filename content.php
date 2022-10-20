@@ -10,7 +10,14 @@
         <div class="wrapper">
             <main class="content">
                 <h1>
-                    <?php echo str_replace("-", " ", $pagename); ?>
+                    <?php 
+                        if($pagename != ''){
+                            echo str_replace("-", " ", $pagename);
+                        }
+                        else {
+                            echo 'All recipes';
+                        }
+                    ?>
                 </h1>
 
                 <?php
