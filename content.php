@@ -57,7 +57,7 @@
                         while($row = mysqli_fetch_assoc($content_result))
                         {
                             $content_id = $row['content_id'];
-                            $images_sql = "SELECT image_file_name FROM `images` 
+                            $images_sql = "SELECT image_file_name, image_alt FROM `images` 
                                     WHERE content_id = '$content_id' AND imagetype_id = 2 LIMIT 1";
                             $images_result = mysqli_query($connection ,$images_sql) or die("Images query failed");
                             $images_result_fetch = mysqli_fetch_array($images_result);
@@ -67,11 +67,11 @@
                                 <?php
                                     if(mysqli_num_rows($images_result) > 0)
                                     {
-                                        echo '<img src="./images/'.$images_result_fetch['image_file_name'].'" alt="" title="">';                   
+                                        echo '<img src="./images/'.$images_result_fetch['image_file_name'].'" alt="'.$images_result_fetch['image_alt'].'">';                   
                                     }
                                     else
                                     {
-                                        echo '<img src="./images/image_not_available.png" alt="" title="">'; 
+                                        echo '<img src="./images/image_not_available.png" alt="Image not available error">'; 
                                     }
                                 ?> 
 

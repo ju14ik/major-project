@@ -25,7 +25,7 @@
         <div class="wrapper">
             <main class="details">
                 <?php
-                    $images_sql = "SELECT image_file_name FROM `images` 
+                    $images_sql = "SELECT image_file_name, image_alt FROM `images` 
                             WHERE content_id = '$content_id' AND imagetype_id = 3 LIMIT 1";
                     $images_result = mysqli_query($connection ,$images_sql) or die("Image query failed 1.3.1");
                     $images_result_fetch = mysqli_fetch_array($images_result);
@@ -42,7 +42,7 @@
 
                     if(mysqli_num_rows($images_result) > 0)
                     {                    
-                        $image = '<img src="./images/'.$images_result_fetch['image_file_name'].'" alt="" title="">';  
+                        $image = '<img src="./images/'.$images_result_fetch['image_file_name'].'" alt="'.$images_result_fetch['image_alt'].'">';  
                     }
 
                     if(mysqli_num_rows($content_result) > 0)
