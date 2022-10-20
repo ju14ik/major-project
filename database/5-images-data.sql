@@ -28,45 +28,47 @@ VALUES
 ('main/how-often-to-eat.jpg','','','Man preparing food with mountains and clouds behind him','3','5'),
 -- BREAKFAST --
 -- Thumbnails --
-('breakfast/avocado-toast-th.jpg','','','Toasts with avocado, eggs, tomatoes, feta cheese','2','6'),
-('breakfast/oatmeal-th.jpg','','','Bowl of oatmeal with coconut flakes, passion fruit, apple, almonds on top','2','7'),
+('breakfast/oatmeal-th.jpg','','','Bowl of oatmeal with coconut flakes, passion fruit, apple, almonds on top','2','6'),
+('breakfast/avocado-toast-th.jpg','','','Toasts with avocado, eggs, tomatoes, feta cheese','2','7'),
+('breakfast/quinoa-breakfast-bar.jpg','','','Quinoa breakfast bar','2','8'),
 -- Full size images --
-('breakfast/avocado-toast.jpg','','','Toasts with avocado, eggs, tomatoes, feta cheese','3','6'),
-('breakfast/oatmeal.jpg','','','Bowl of oatmeal with coconut flakes, passion fruit, apple, almonds on top','3','7'),
+('breakfast/oatmeal.jpg','','','Bowl of oatmeal with coconut flakes, passion fruit, apple, almonds on top','3','6'),
+('breakfast/avocado-toast.jpg','','','Toasts with avocado, eggs, tomatoes, feta cheese','3','7'),
+('breakfast/quinoa-breakfast-bar-th.jpg','','','Quinoa breakfast bar','2','8'),
 -- SNACKS --
 -- Thumbnails --
-('snacks/chocolate-cherry-trail-mix-th.jpg','','','Mix of walnuts, dried cherries, dark chocolate chunks, pumpkin seeds, dried blueberies','2','8'),
-('snacks/cheese-and-meat-platter-th.jpg','','','Dry salami, prosciutto, cheese, olives, sundried tomatoes, cherry tomatoes on a plate','2','9'),
+('snacks/chocolate-cherry-trail-mix-th.jpg','','','Mix of walnuts, dried cherries, dark chocolate chunks, pumpkin seeds, dried blueberies','2','9'),
+('snacks/cheese-platter-th.jpg','','','Slices of cheese, pear and olives','2','10'),
 -- Full size images --
-('snacks/chocolate-cherry-trail-mix.jpg','','','Mix of walnuts, dried cherries, dark chocolate chunks, pumpkin seeds, dried blueberies','3','8'),
-('snacks/cheese-and-meat-platter.jpg','','','Dry salami, prosciutto, cheese, olives, sundried tomatoes, cherry tomatoes on a plate','3','9'),
+('snacks/chocolate-cherry-trail-mix.jpg','','','Mix of walnuts, dried cherries, dark chocolate chunks, pumpkin seeds, dried blueberies','3','9'),
+('snacks/cheese-platter.jpg','','','Slices of cheese, pear and olives','3','10'),
 -- DESSERT --
 -- Thumbnails --
-('desserts/chia-pudding-th.jpg','','','Glass of chia pudding with berries on top','2','10'),
-('desserts/peanut-butter-energy-balls-th.jpg','','','Peanut butter energy balls insite a white wooden tray with flowers around','2','11'),
-('desserts/chocolate-protein-cookies-th.jpg','','','Chocolate protein cookies stacked on top of eachother','2','12'),
+('desserts/chia-pudding-th.jpg','','','Glass of chia pudding with berries on top','2','11'),
+('desserts/peanut-butter-energy-balls-th.jpg','','','Peanut butter energy balls insite a white wooden tray with flowers around','2','12'),
+('desserts/chocolate-protein-cookies-th.jpg','','','Chocolate protein cookies stacked on top of eachother','2','13'),
 -- Full size images --
-('desserts/chia-pudding.jpg','','','Glass of chia pudding with berries on top','3','10'),
-('desserts/peanut-butter-energy-balls.jpg','','','Peanut butter energy balls insite a white wooden tray with flowers around','3','11'),
-('desserts/chocolate-protein-cookies.jpg','','','Chocolate protein cookies stacked on top of eachother','3','12'),
+('desserts/chia-pudding.jpg','','','Glass of chia pudding with berries on top','3','11'),
+('desserts/peanut-butter-energy-balls.jpg','','','Peanut butter energy balls insite a white wooden tray with flowers around','3','12'),
+('desserts/chocolate-protein-cookies.jpg','','','Chocolate protein cookies stacked on top of eachother','3','13'),
 -- DRINKS --
 -- Thumbnails --
-('drinks/cold-coffee-th.jpg','','','Spoon with cold coffee powder and a metal cup','2','13'),
-('drinks/strawberry-smoothie-th.jpg','','','Strawberry smoothie inside a clear plastic cup','2','14'),
-('drinks/cold-brew-tea-th.jpg','','','Jar of cold brew tea with green leaves','2','15'),
+('drinks/cold-coffee-th.jpg','','','Spoon with cold coffee powder and a metal cup','2','14'),
+('drinks/strawberry-smoothie-th.jpg','','','Strawberry smoothie inside a clear plastic cup','2','15'),
+('drinks/cold-brew-tea-th.jpg','','','Jar of cold brew tea with green leaves','2','16'),
 -- Full size images --
-('drinks/cold-coffee.jpg','','','Spoon with cold coffee powder and a metal cup','3','13'),
-('drinks/strawberry-smoothie.jpg','','','Strawberry smoothie inside a clear plastic cup','3','14'),
-('drinks/cold-brew-tea.jpg','','','Jar of cold brew tea with green leaves','3','15'),
+('drinks/cold-coffee.jpg','','','Spoon with cold coffee powder and a metal cup','3','14'),
+('drinks/strawberry-smoothie.jpg','','','Strawberry smoothie inside a clear plastic cup','3','15'),
+('drinks/cold-brew-tea.jpg','','','Jar of cold brew tea with green leaves','3','16'),
 -- DINNER --
 -- Thumbnails --
-('dinner/guacamole-bruschetta-th.jpg','','','Guacamole bruschetta with sesame seeds on top','2','16'),
+('dinner/guacamole-bruschetta-th.jpg','','','Guacamole bruschetta with sesame seeds on top','2','17'),
 -- Full size images --
-('dinner/guacamole-bruschetta.jpg','','','Guacamole bruschetta with sesame seeds on top','3','16'),
+('dinner/guacamole-bruschetta.jpg','','','Guacamole bruschetta with sesame seeds on top','3','17'),
 -- LUNCH --
 -- Thumbnails --
-('lunch/roast-beef-sandwich-th.jpg','','','Roast beef sandwich with salad and cheese','2','17'),
+('lunch/roast-beef-sandwich-th.jpg','','','Roast beef sandwich with salad and cheese','2','18'),
 -- Full size images --
-('lunch/roast-beef-sandwich.jpg','','','Roast beef sandwich with salad and cheese','3','17');
+('lunch/roast-beef-sandwich.jpg','','','Roast beef sandwich with salad and cheese','3','18');
 
 
