@@ -25,8 +25,12 @@
                         $heading_h2 = $heading_result_fetch['content']; 
                     }
 
-                    echo '<h1>'.$heading_h1.'</h1>';
+                    // echo '<h1>'.$heading_h1.'</h1>';
                 ?>
+                <div class="heading">
+                    <h1>Quick and delicious hiking food recipes</h1>
+                </div>
+                
 
                 <!-- Main image -->
                 <?php

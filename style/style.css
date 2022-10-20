@@ -82,12 +82,31 @@ main, .container {
 }
 
 /* Home page */
-.home-page > h1 {
+/* .home-page > h1 {
     font-size: 2.4em;
     text-transform: uppercase;
     text-align: center;
     padding-top: 1em;
     line-height: 1.2em;
+} */
+
+.heading {
+    z-index : -1;
+    position: relative;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 1em;
+    line-height: 1.2em;
+}
+
+.heading::before {
+    content: "";
+    position: absolute;
+    left: 30%;
+    bottom: -0.7em;
+    width: 40%;
+    border-bottom: 1px solid #cccccc;
 }
 
 .home-page > h2 {
@@ -106,9 +125,8 @@ main, .container {
 /* Main image */
 .home-page > img {
     width: 100%;
-    padding-top: 2em;
+    padding-top: 4em;
 }
-
 
 /* Header */
 header {
@@ -462,15 +480,16 @@ input[type="text"] {
 
 /* Tablets */
 @media (min-width: 768px) {
-}
-
-@media (min-width: 768px) {
-}
-
-/* Laptops */
-@media (min-width: 992px) {
     main, .container {
         width: 50vw;
         margin: auto;
     }
+    .heading {
+        font-size: 2.2vw;
+    }
+}
+
+/* Laptops */
+@media (min-width: 992px) {
+
 }
