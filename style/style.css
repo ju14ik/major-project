@@ -228,7 +228,10 @@ footer > p {
     width: 100%;
     margin: 1em auto;
     background-color: #f0f0f0;
-    /* background-color: #f9f9f9; */
+}
+
+.heading + .recipe {
+    margin-top: 4em;
 }
 
 .recipe > img {
@@ -340,6 +343,11 @@ footer > p {
     text-decoration: none;
 }
 
+.readmore-button:hover {
+   background-color:  #ddd;
+    color: #212d42;
+}
+
 .goback-button {
     margin: auto 0;
 }
@@ -362,6 +370,18 @@ footer > p {
 .nav-button > a:hover {
     background-color: #ddd;
     color: #212d42;
+}
+
+.previous, .next {
+    width: 100%;
+}
+
+.previous > a {
+    float: left;
+}
+
+.next > a {
+    float: right;
 }
 
 .bottom-buttons {

@@ -9,17 +9,18 @@
         ?>
         <div class="wrapper">
             <main class="content">
-                <h1>
-                    <?php 
-                        if($pagename != ''){
-                            echo str_replace("-", " ", $pagename);
-                        }
-                        else {
-                            echo 'All recipes';
-                        }
-                    ?>
-                </h1>
-
+                <div class="heading">
+                    <h1>
+                        <?php 
+                            if($pagename != ''){
+                                echo str_replace("-", " ", $pagename);
+                            }
+                            else {
+                                echo 'All recipes';
+                            }
+                        ?>
+                    </h1>
+                </div>
                 <?php
                     // Content block
                     $content_sql = "SELECT content.content_id, content.title, content.description, content.content, category.category_name, contentcategorytype.contenttype_id
