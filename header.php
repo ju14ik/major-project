@@ -41,7 +41,7 @@
         <!-- Links -->
         <link rel="canonical" href="https://julija.uk/something/something.php" />
         <link rel="icon" type="image/x-icon" href="./images/favicon.png">
-        <link rel="stylesheet" href="style/style.css?version=16">
+        <link rel="stylesheet" href="style/style.css?version=17">
         <!-- Used by search button -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
