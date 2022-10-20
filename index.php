@@ -25,13 +25,9 @@
                         $heading_h2 = $heading_result_fetch['content']; 
                     }
 
-                    // echo '<h1>'.$heading_h1.'</h1>';
-                ?>
-                <div class="heading">
-                    <h1>Quick and delicious hiking food recipes</h1>
-                </div>
-                
-
+                    echo '<div class="heading"><h1>'.$heading_h1.'</h1></div>';
+                ?>               
+                        
                 <!-- Main image -->
                 <?php
                     $images_sql = "SELECT image_file_name, image_href, image_alt FROM `images` 

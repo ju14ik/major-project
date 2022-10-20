@@ -39,36 +39,40 @@ VALUES
 -- Thumbnails --
 ('snacks/chocolate-cherry-trail-mix-th.jpg','','','Mix of walnuts, dried cherries, dark chocolate chunks, pumpkin seeds, dried blueberies','2','9'),
 ('snacks/cheese-platter-th.jpg','','','Slices of cheese, pear and olives','2','10'),
+('snacks/chickpeas-th.jpg','','','TODO','2','11'),
 -- Full size images --
 ('snacks/chocolate-cherry-trail-mix.jpg','','','Mix of walnuts, dried cherries, dark chocolate chunks, pumpkin seeds, dried blueberies','3','9'),
 ('snacks/cheese-platter.jpg','','','Slices of cheese, pear and olives','3','10'),
+('snacks/chickpeas.jpg','','','TODO','3','11'),
 -- DESSERT --
 -- Thumbnails --
-('desserts/chia-pudding-th.jpg','','','Glass of chia pudding with berries on top','2','11'),
-('desserts/peanut-butter-energy-balls-th.jpg','','','Peanut butter energy balls insite a white wooden tray with flowers around','2','12'),
-('desserts/chocolate-protein-cookies-th.jpg','','','Chocolate protein cookies stacked on top of eachother','2','13'),
+('desserts/chia-pudding-th.jpg','','','Glass of chia pudding with berries on top','2','12'),
+('desserts/peanut-butter-energy-balls-th.jpg','','','Peanut butter energy balls insite a white wooden tray with flowers around','2','13'),
+('desserts/chocolate-protein-cookies-th.jpg','','','Chocolate protein cookies stacked on top of eachother','2','14'),
 -- Full size images --
-('desserts/chia-pudding.jpg','','','Glass of chia pudding with berries on top','3','11'),
-('desserts/peanut-butter-energy-balls.jpg','','','Peanut butter energy balls insite a white wooden tray with flowers around','3','12'),
-('desserts/chocolate-protein-cookies.jpg','','','Chocolate protein cookies stacked on top of eachother','3','13'),
+('desserts/chia-pudding.jpg','','','Glass of chia pudding with berries on top','3','12'),
+('desserts/peanut-butter-energy-balls.jpg','','','Peanut butter energy balls insite a white wooden tray with flowers around','3','13'),
+('desserts/chocolate-protein-cookies.jpg','','','Chocolate protein cookies stacked on top of eachother','3','14'),
 -- DRINKS --
 -- Thumbnails --
-('drinks/cold-coffee-th.jpg','','','Spoon with cold coffee powder and a metal cup','2','14'),
-('drinks/strawberry-smoothie-th.jpg','','','Strawberry smoothie inside a clear plastic cup','2','15'),
-('drinks/cold-brew-tea-th.jpg','','','Jar of cold brew tea with green leaves','2','16'),
+('drinks/cold-coffee-th.jpg','','','Spoon with cold coffee powder and a metal cup','2','15'),
+('drinks/strawberry-smoothie-th.jpg','','','Strawberry smoothie inside a clear plastic cup','2','16'),
+('drinks/cold-brew-tea-th.jpg','','','Jar of cold brew tea with green leaves','2','17'),
 -- Full size images --
-('drinks/cold-coffee.jpg','','','Spoon with cold coffee powder and a metal cup','3','14'),
-('drinks/strawberry-smoothie.jpg','','','Strawberry smoothie inside a clear plastic cup','3','15'),
-('drinks/cold-brew-tea.jpg','','','Jar of cold brew tea with green leaves','3','16'),
+('drinks/cold-coffee.jpg','','','Spoon with cold coffee powder and a metal cup','3','15'),
+('drinks/strawberry-smoothie.jpg','','','Strawberry smoothie inside a clear plastic cup','3','16'),
+('drinks/cold-brew-tea.jpg','','','Jar of cold brew tea with green leaves','3','17'),
 -- DINNER --
 -- Thumbnails --
-('dinner/guacamole-bruschetta-th.jpg','','','Guacamole bruschetta with sesame seeds on top','2','17'),
+('dinner/guacamole-bruschetta-th.jpg','','','Guacamole bruschetta with sesame seeds on top','2','18'),
 -- Full size images --
-('dinner/guacamole-bruschetta.jpg','','','Guacamole bruschetta with sesame seeds on top','3','17'),
+('dinner/guacamole-bruschetta.jpg','','','Guacamole bruschetta with sesame seeds on top','3','18'),
 -- LUNCH --
 -- Thumbnails --
-('lunch/roast-beef-sandwich-th.jpg','','','Roast beef sandwich with salad and cheese','2','18'),
+('lunch/chicken-wrap-th.jpg','','','Roast beef sandwich with salad and cheese','2','19'),
+('lunch/roast-beef-sandwich-th.jpg','','','Roast beef sandwich with salad and cheese','2','20'),
 -- Full size images --
-('lunch/roast-beef-sandwich.jpg','','','Roast beef sandwich with salad and cheese','3','18');
+('lunch/chicken-wrap.jpg','','','Roast beef sandwich with salad and cheese','3','19'),
+('lunch/roast-beef-sandwich.jpg','','','Roast beef sandwich with salad and cheese','3','20');
 
 

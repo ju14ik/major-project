@@ -42,12 +42,12 @@
 
                     if(mysqli_num_rows($images_result) > 0)
                     {                    
-                        $image = '<img src="./images/'.$images_result_fetch['image_file_name'].'" alt="'.$images_result_fetch['image_alt'].'">';  
+                        $image = '<div class="details-img"><img src="./images/'.$images_result_fetch['image_file_name'].'" alt="'.$images_result_fetch['image_alt'].'"></div>';  
                     }
 
                     if(mysqli_num_rows($content_result) > 0)
                     {
-                        echo '<h1>'.$content_result_fetch['title'].'</h1>';
+                        echo '<div class="heading"><h1>'.$content_result_fetch['title'].'</h1></div>';
                         echo $image;
                         echo $content_result_fetch['content'];
                         
@@ -59,6 +59,7 @@
 
                     <?php 
                         if($start_content_id > 0 && $end_content_id > 0) {
+                            echo '<div class="bottom-buttons">';
                             if($start_content_id == $content_id && $end_content_id == $content_id) {
                                 //Back button
                                 echo '<div class="nav-button back"><a href="content.php?pagename='.$pagename.'">Back</a></div>';
@@ -71,6 +72,7 @@
                                 //Next button
                                 echo '<div class="nav-button next"><a href="detail.php?content_id='.($content_id+1).'&start_content_id='.$start_content_id.'&end_content_id='.$end_content_id.'">Next &raquo;</a></div>'; 
                             }
+                            echo '</div>';
                         }
                         else {
                             echo '<div class="nav-button back"><a href="index.php">Back</a></div>';

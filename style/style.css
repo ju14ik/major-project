@@ -241,8 +241,8 @@ footer > p {
 
 /* Details page */
 .details p {
-    line-height: 1.2em;
-    padding-top: 1em;
+    line-height: 1.4em;
+    padding-bottom: 1.2em;
 }
 
 .details > h3 {
@@ -275,7 +275,12 @@ footer > p {
 .details img {
     max-width: 400px;   
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 2em auto;
+}
+
+.details-img {
+    background-color: #f0f0f0;
+    margin-top: 4em;
 }
 
 /* Recipe info */
@@ -358,13 +363,10 @@ footer > p {
     background-color: #ddd;
     color: #212d42;
 }
-  
-.previous > a {
-    float: left;
-}
-  
-.next > a {
-    float: right;
+
+.bottom-buttons {
+    display: flex;
+    justify-content: space-between;
 }
 
 .back {
