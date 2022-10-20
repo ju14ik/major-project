@@ -106,7 +106,7 @@ main, .container {
     left: 30%;
     bottom: -0.7em;
     width: 40%;
-    border-bottom: 1px solid #cccccc;
+    border-bottom: 1px solid #000;
 }
 
 .home-page > h2 {
@@ -156,7 +156,7 @@ footer {
     text-align: center;
     background-color: #fff;
     border-top: 1px solid #cccccc;
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
     width: 100%;
     /* position: sticky;
@@ -344,8 +344,7 @@ footer > p {
 }
 
 .readmore-button:hover {
-   background-color:  #ddd;
-    color: #212d42;
+    opacity: 0.8;
 }
 
 .goback-button {
@@ -515,3 +514,100 @@ input[type="text"] {
 @media (min-width: 992px) {
 
 }
+
+.social {
+    display: inline-flex;
+    list-style: none;
+    margin-top: 2em;
+  }
+  
+  .social .icon {
+    position: relative;
+    background: #e6e6e6;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+    width: 15px;
+    height: 15px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .social .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .social .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .social .icon:hover .tooltip {
+    top: -30px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .social .icon:hover span,
+  .social .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .social .facebook:hover,
+  .social .facebook:hover .tooltip,
+  .social .facebook:hover .tooltip::before {
+    background: #1877F2;
+    color: #ffffff;
+  }
+  
+  .social .twitter:hover,
+  .social .twitter:hover .tooltip,
+  .social .twitter:hover .tooltip::before {
+    background: #1DA1F2;
+    color: #ffffff;
+  }
+  
+  .social .instagram:hover,
+  .social .instagram:hover .tooltip,
+  .social .instagram:hover .tooltip::before {
+    background: #E4405F;
+    color: #ffffff;
+  }
+  
+  .social .github:hover,
+  .social .github:hover .tooltip,
+  .social .github:hover .tooltip::before {
+    background: #333333;
+    color: #ffffff;
+  }
+  
+  .social .youtube:hover,
+  .social .youtube:hover .tooltip,
+  .social .youtube:hover .tooltip::before {
+    background: #CD201F;
+    color: #ffffff;
+  }
