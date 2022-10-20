@@ -1,4 +1,6 @@
------------------- Data for `contentcategorytype` table -------------------
+-- Data for `contentcategorytype` table --
+
+TRUNCATE TABLE `contentcategorytype`;
 
 INSERT INTO `contentcategorytype`(`category_id`, `content_id`, `contenttype_id`) 
 VALUES 
@@ -26,7 +28,3 @@ VALUES
 ('5','16','2'),
 -- LUNCH --
 ('4','17','2');
-
--- STOVELESS MEALS --
--- ('6','9','2'),
--- ('6','10','2'),

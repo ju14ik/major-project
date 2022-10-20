@@ -1,4 +1,8 @@
------------------- Categories and types -------------------
+-- Categories and types --
+
+TRUNCATE TABLE `category`;
+TRUNCATE TABLE `contenttype`;
+TRUNCATE TABLE `imagetype`;
 
 -- Data for `category` table
 INSERT INTO `category`(`category_name`)

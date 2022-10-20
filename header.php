@@ -80,34 +80,18 @@
         </script>
         <!-- meta -->
         <meta charset="utf-8">
-        <meta name="description" content="Website about hiking meals">
-        <meta name="keywords" content="some, keywords">
+        <meta name="description" content="Website about hiking food">
+        <meta name="keywords" content="hiking food, hiking meals, hike foodie, hiking breakfast, hiking lunch, hiking dinner, hiking snacks, hiking dessert, hiking drinks">
         <meta name="author" content="Julija Celinska">
         <meta name="viewport" content="initial-scale=1, maximum-scale=1">
         <!-- Title -->
         <title><?php echo $page_title; ?></title>
         <!-- Links -->
         <link rel="canonical" href="https://julija.uk/something/something.php" />
-        <link rel="icon" type="image/x-icon" href="./images/hedgehog-4.png">
-        <link rel="stylesheet" href="style/style.css?version=13">
-        <!-- Used by nav (arrow down) -->
+        <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+        <link rel="stylesheet" href="style/style.css?version=14">
+        <!-- Used by search button -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- Add fonts if needed -->
-        <!-- Scripts -->
-        <!-- <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script type="text/javascript">
-			$( document ).ready(function() {
-                $('.header').on('click', '.search-toggle', function(e) {
-                var selector = $(this).data('selector');
-                
-                $(selector).toggleClass('show').find('.search-input').focus();
-                $(this).toggleClass('active');
-                
-                e.preventDefault();
-                });
-			});
-		</script> -->
-
     </head>
 	<body>
         <header id="header-1" class="header">  
@@ -133,7 +117,6 @@
            
                 <form action="./search.php" autocomplete="on">
                     <input id="search" name="search" type="text" placeholder="What are you looking for?">
-                    <!-- <input class="fa fa-search" id="search_submit" value="Rechercher" type="submit"> -->
                     <button class="search-button" type="submit"><i class="fa fa-search fa-2x"></i></button>
                 </form>
 
