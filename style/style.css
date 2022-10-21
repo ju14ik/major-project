@@ -105,7 +105,7 @@ main, .container {
     content: "";
     position: absolute;
     left: 30%;
-    bottom: -0.7em;
+    bottom: -20px;
     width: 40%;
     border-bottom: 1px solid #000;
 }
@@ -126,7 +126,7 @@ main, .container {
 /* Main image */
 .home-page > img {
     width: 100%;
-    padding-top: 4em;
+    padding-top: 50px;
 }
 
 /* Header */
@@ -613,10 +613,10 @@ input[type=text] {
 /* Tablets */
 @media (min-width: 768px) {
     main, .container {
-        width: 70vw;
+        width: 60vw;
     }
     .heading {
-        font-size: 2.8vw;
+        font-size: 2.2vw;
     }
     .column > h2 {
         font-size: 2.4vw;
