@@ -621,12 +621,12 @@ input[type="text"] {
     color: #ffffff;
 }
   
-.social .github:hover,
+/* .social .github:hover,
 .social .github:hover .tooltip,
 .social .github:hover .tooltip::before {
     background: #333333;
     color: #ffffff;
-}
+} */
   
 .social .youtube:hover,
 .social .youtube:hover .tooltip,
