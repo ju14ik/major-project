@@ -1,0 +1,2 @@
+# Custom error page - 404
+ErrorDocument 404 /404.php
