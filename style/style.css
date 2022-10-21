@@ -405,6 +405,7 @@ footer > p {
 
 .back {
     text-align: center;
+    width: 100%;
 }
 
 /* TODO */
@@ -435,7 +436,7 @@ footer > p {
     flex-direction: column;
 }
 
-input[type=text] {
+.search-form input[type=text] {
     height: 27px;;
     font-size: 0.8em;
     /* border: 1px solid grey; */
@@ -733,7 +734,7 @@ input[type=text] {
     }
 
     /* Search related styling */
-    input[type="text"] {
+    .search-form input[type="text"] {
         height: 33px;
         font-size: 1.4em;
         display: inline-block;
@@ -751,11 +752,11 @@ input[type=text] {
         cursor: pointer;
     }
   
-    input[type="text"]:focus:hover {
+    .search-form input[type="text"]:focus:hover {
         border-bottom: 1px solid #BBB;
     }
   
-    input[type="text"]:focus {
+    .search-form input[type="text"]:focus {
         width: 300px;
         z-index: 1;
         border-bottom: 1px solid #BBB;

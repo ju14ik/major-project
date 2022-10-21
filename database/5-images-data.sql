@@ -37,11 +37,11 @@ VALUES
 ('breakfast/quinoa-breakfast-bar-th.jpg','','','Quinoa breakfast bar','3','8'),
 -- SNACKS --
 -- Thumbnails --
-('snacks/chocolate-cherry-trail-mix-th.jpg','','','Mix of walnuts, dried cherries, dark chocolate chunks, pumpkin seeds, dried blueberies','2','9'),
+('snacks/chocolate-cherry-trail-mix-th.jpg','','','Mix of dried apricots, hazelnuts, cashew nuts, prunes, coconut flakes','2','9'),
 ('snacks/cheese-platter-th.jpg','','','Slices of cheese, pear and olives','2','10'),
 ('snacks/chickpeas-th.jpg','','','TODO','2','11'),
 -- Full size images --
-('snacks/chocolate-cherry-trail-mix.jpg','','','Mix of walnuts, dried cherries, dark chocolate chunks, pumpkin seeds, dried blueberies','3','9'),
+('snacks/chocolate-cherry-trail-mix.jpg','','','Mix of dried apricots, hazelnuts, cashew nuts, prunes, coconut flakes','3','9'),
 ('snacks/cheese-platter.jpg','','','Slices of cheese, pear and olives','3','10'),
 ('snacks/chickpeas.jpg','','','TODO','3','11'),
 -- DESSERT --
@@ -64,19 +64,21 @@ VALUES
 ('drinks/cold-brew-tea.jpg','','','Jar of cold brew tea with green leaves','3','17'),
 -- DINNER --
 -- Thumbnails --
-('dinner/guacamole-bruschetta-th.jpg','','','Guacamole bruschetta with sesame seeds on top','2','18'),
-('dinner/steak-th.jpg','','','Steak on a grill','2','19'),
+('dinner/steak-th.jpg','','','Steak on a grill','2','18'),
+('dinner/guacamole-bruschetta-th.jpg','','','Guacamole bruschetta with sesame seeds on top','2','19'),
+('dinner/tuna-salad-th.jpg','','','Tuna sald','2','20'),
 -- Full size images --
-('dinner/guacamole-bruschetta.jpg','','','Guacamole bruschetta with sesame seeds on top','3','18'),
-('dinner/steak.jpg','','','Steak on a grill','3','19'),
+('dinner/steak.jpg','','','Steak on a grill','3','18'),
+('dinner/guacamole-bruschetta.jpg','','','Guacamole bruschetta with sesame seeds on top','3','19'),
+('dinner/tuna-salad.jpg','','','Tuna sald','3','20'),
 -- LUNCH --
 -- Thumbnails --
-('lunch/chicken-wrap-th.jpg','','','Roast beef sandwich with salad and cheese','2','20'),
-('lunch/hummus-th.jpg','','','Jar of hummus','2','21'),
-('lunch/roast-beef-sandwich-th.jpg','','','Roast beef sandwich with salad and cheese','2','22'),
+('lunch/chicken-wrap-th.jpg','','','Roast beef sandwich with salad and cheese','2','21'),
+('lunch/hummus-th.jpg','','','Jar of hummus','2','22'),
+('lunch/roast-beef-sandwich-th.jpg','','','Roast beef sandwich with salad and cheese','2','23'),
 -- Full size images --
-('lunch/chicken-wrap.jpg','','','Roast beef sandwich with salad and cheese','3','20'),
-('lunch/hummus.jpg','','','Jar of hummus','3','21'),
-('lunch/roast-beef-sandwich.jpg','','','Roast beef sandwich with salad and cheese','3','22');
+('lunch/chicken-wrap.jpg','','','Roast beef sandwich with salad and cheese','3','21'),
+('lunch/hummus.jpg','','','Jar of hummus','3','22'),
+('lunch/roast-beef-sandwich.jpg','','','Roast beef sandwich with salad and cheese','3','23');
 
 

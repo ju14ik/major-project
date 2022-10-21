@@ -78,7 +78,7 @@
                                         <h2>Other recipes from this category:</h2>
                                         <div class="recipes-block">';
 
-                                $index = 0;
+                                $index_other = 0;
                                 $other_start_content_id = 0;
                                 $other_end_content_id = 0;
                                 while($row = mysqli_fetch_assoc($other_result))
@@ -89,7 +89,7 @@
                                     $images_result = mysqli_query($connection ,$images_sql) or die("Images query failed");
                                     $images_result_fetch = mysqli_fetch_array($images_result);
 
-                                    if($index == 0) {
+                                    if($index_other == 0) {
                                         $other_start_content_id = $other_content_id;
                                     }
                                     if(mysqli_num_rows($other_result) > 0) {
@@ -114,7 +114,7 @@
                                                     </a>
                                                 </div>'; 
                                     }
-                                    $index++;
+                                    $index_other++;
                                 }
                                 echo '</div></div>';
                             }
