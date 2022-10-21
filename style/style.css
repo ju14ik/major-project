@@ -438,21 +438,22 @@ footer > p {
 input[type=text] {
     height: 27px;;
     font-size: 0.8em;
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
+    border: none;
     float: left;
-    /* width: 80%; */
     background: #f0f0f0;
 }
   
 .search-button {
-    float: left;
-    height: 31px;
-    width: 31px;
+    /* float: left; */
+    height: 29px;
+    /* width: 31px; */
     background: #f65d38;
     color: #fff;
     font-size: 0.6em;
-    border: 1px solid grey;
-    border-left: none;
+    /* border: 1px solid grey; */
+    border: none;
+    /* border-left: none; */
     cursor: pointer;
 }
   
