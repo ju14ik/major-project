@@ -429,6 +429,8 @@ footer > p {
 .search-form-container {
     width: 100%;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 input[type=text] {
