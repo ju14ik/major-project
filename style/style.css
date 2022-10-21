@@ -285,10 +285,12 @@ footer > p {
     line-height: 1.2em;
 }
 
-.details img {
+.details-img > img {
     max-width: 400px;   
     display: block;
     margin: 0 auto 2em auto;
+    width: 100%; 
+    height: auto;
 }
 
 .details-img {
@@ -610,6 +612,50 @@ input[type=text] {
     color: #ffffff;
 }
 
+/* Other recipes block */
+.other-recipes-container {
+    margin-top: 2em;
+}
+
+.recipes-block {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.other-recipe {
+    text-align: center;
+    padding: 0 0.5em;
+    margin: 0 5px;
+}
+
+.other-recipe img {
+    max-width: 150px;
+}
+
+.other-recipe > a {
+    text-decoration: none;
+}
+
+.other-recipe > a > h2 {
+    color: #212d42;
+    height: auto;
+    padding: 10px 0;
+}
+
+.other-recipe > a > h2:hover {
+    color: #f65d38;
+}
+
+.other-recipes-container > h2 {
+    text-align: center;
+    font-family: ClearSansBold;
+    font-size: 1.4em;
+    padding-bottom: 1em;
+}
+
+
 /* Responsiveness */
 /* Small phones */
 @media (min-width: 280px) {
@@ -712,4 +758,3 @@ input[type=text] {
         font-size: 1.6em;
     }
 }
-
