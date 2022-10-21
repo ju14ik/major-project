@@ -440,7 +440,7 @@ input[type=text] {
     font-size: 0.8em;
     border: 1px solid grey;
     float: left;
-    width: 80%;
+    /* width: 80%; */
     background: #f0f0f0;
 }
   
