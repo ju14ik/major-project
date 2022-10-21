@@ -67,11 +67,11 @@
                         echo '<a href="'.$images_result_fetch['image_href'].'"><img src="./images/image_not_available.png" alt="Image not available error"></a>';        
                     }
                 ?>
-           
-                <form class="search-form" action="./search.php" autocomplete="on">
-                    <input id="search" name="search" type="text" placeholder="What are you looking for?">
-                    <button class="search-button" type="submit"><i class="fa fa-search fa-2x"></i></button>
-                </form>
-
+                <div class="search-form-container">
+                    <form class="search-form" action="./search.php" autocomplete="on">
+                        <input id="search" name="search" type="text" placeholder="What are you looking for?">
+                        <button class="search-button" type="submit"><i class="fa fa-search fa-2x"></i></button>
+                    </form>
+                </div>
             </div>
         </header>

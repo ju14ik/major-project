@@ -426,6 +426,11 @@ footer > p {
 
 
 /* SEARCH */
+.search-form-container {
+    width: 100%;
+    text-align: center;
+}
+
 input[type=text] {
     height: 27px;;
     font-size: 0.8em;
