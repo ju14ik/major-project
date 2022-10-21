@@ -99,7 +99,7 @@
                                     if(mysqli_num_rows($images_result) > 0)
                                     {
                                         echo    '<div class="other-recipe">
-                                                    <a href="detail.php?content_id='.$other_content_id.'&pagename='.$pagename.'&start_content_id='.$other_start_content_id.'&end_content_id='.$other_end_content_id.'">
+                                                    <a href="detail.php?content_id='.$other_content_id.'&pagename='.$pagename.'&start_content_id='.$other_start_content_id.'&end_content_id='.$other_end_content_id.'&recipe=1">
                                                         <img src="./images/'.$images_result_fetch['image_file_name'].'" alt="'.$images_result_fetch['image_alt'].'">
                                                         <h2>'.$row['title'].'</h2>
                                                     </a>
@@ -108,7 +108,7 @@
                                     else
                                     {
                                         echo    '<div class="other-recipe">
-                                                    <a href="detail.php?content_id='.$other_content_id.'&pagename='.$pagename.'&start_content_id='.$other_start_content_id.'&end_content_id='.$other_end_content_id.'">
+                                                    <a href="detail.php?content_id='.$other_content_id.'&pagename='.$pagename.'&start_content_id='.$other_start_content_id.'&end_content_id='.$other_end_content_id.'&recipe=1">
                                                         <img src="./images/image_not_available.png" alt="Image not available error">
                                                         <h2>'.$row['title'].'</h2>
                                                     </a>
@@ -134,11 +134,11 @@
                             }
                             if($start_content_id < $content_id) {
                                 //Previous button
-                                echo '<div class="nav-button previous"><a href="detail.php?pagename='.$pagename.'&content_id='.($content_id-1).'&start_content_id='.$start_content_id.'&end_content_id='.$end_content_id.'">&laquo; Previous</a></div>'; 
+                                echo '<div class="nav-button previous"><a href="detail.php?pagename='.$pagename.'&content_id='.($content_id-1).'&start_content_id='.$start_content_id.'&end_content_id='.$end_content_id.'&recipe=1">&laquo; Previous</a></div>'; 
                             }
                             if($end_content_id > $content_id) {
                                 //Next button
-                                echo '<div class="nav-button next"><a href="detail.php?pagename='.$pagename.'&content_id='.($content_id+1).'&start_content_id='.$start_content_id.'&end_content_id='.$end_content_id.'">Next &raquo;</a></div>'; 
+                                echo '<div class="nav-button next"><a href="detail.php?pagename='.$pagename.'&content_id='.($content_id+1).'&start_content_id='.$start_content_id.'&end_content_id='.$end_content_id.'&recipe=1">Next &raquo;</a></div>'; 
                             }
                             echo '</div>';
                         }
