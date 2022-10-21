@@ -271,6 +271,7 @@ footer > p {
 .details ul {
     list-style-type: circle;
     margin-left: 3em;
+    list-style-type: none;
 }
 
 .details li:not(:last-child) { 
