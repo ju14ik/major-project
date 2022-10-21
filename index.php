@@ -4,9 +4,7 @@
         ?>
 
         <div class="wrapper">
-
             <main class="home-page">
-
                 <?php
                     $heading_sql = "SELECT content.content_id, content.title, content.description, content.content, category.category_name, contentcategorytype.contenttype_id
                     FROM `contentcategorytype` 

@@ -34,7 +34,7 @@ VALUES
 -- Full size images --
 ('breakfast/oatmeal.jpg','','','Bowl of oatmeal with coconut flakes, passion fruit, apple, almonds on top','3','6'),
 ('breakfast/avocado-toast.jpg','','','Toasts with avocado, eggs, tomatoes, feta cheese','3','7'),
-('breakfast/quinoa-breakfast-bar-th.jpg','','','Quinoa breakfast bar','2','8'),
+('breakfast/quinoa-breakfast-bar-th.jpg','','','Quinoa breakfast bar','3','8'),
 -- SNACKS --
 -- Thumbnails --
 ('snacks/chocolate-cherry-trail-mix-th.jpg','','','Mix of walnuts, dried cherries, dark chocolate chunks, pumpkin seeds, dried blueberies','2','9'),
@@ -65,14 +65,18 @@ VALUES
 -- DINNER --
 -- Thumbnails --
 ('dinner/guacamole-bruschetta-th.jpg','','','Guacamole bruschetta with sesame seeds on top','2','18'),
+('dinner/steak-th.jpg','','','Steak on a grill','2','19'),
 -- Full size images --
 ('dinner/guacamole-bruschetta.jpg','','','Guacamole bruschetta with sesame seeds on top','3','18'),
+('dinner/steak.jpg','','','Steak on a grill','3','19'),
 -- LUNCH --
 -- Thumbnails --
-('lunch/chicken-wrap-th.jpg','','','Roast beef sandwich with salad and cheese','2','19'),
-('lunch/roast-beef-sandwich-th.jpg','','','Roast beef sandwich with salad and cheese','2','20'),
+('lunch/chicken-wrap-th.jpg','','','Roast beef sandwich with salad and cheese','2','20'),
+('lunch/hummus-th.jpg','','','Jar of hummus','2','21'),
+('lunch/roast-beef-sandwich-th.jpg','','','Roast beef sandwich with salad and cheese','2','22'),
 -- Full size images --
-('lunch/chicken-wrap.jpg','','','Roast beef sandwich with salad and cheese','3','19'),
-('lunch/roast-beef-sandwich.jpg','','','Roast beef sandwich with salad and cheese','3','20');
+('lunch/chicken-wrap.jpg','','','Roast beef sandwich with salad and cheese','3','20'),
+('lunch/hummus.jpg','','','Jar of hummus','3','21'),
+('lunch/roast-beef-sandwich.jpg','','','Roast beef sandwich with salad and cheese','3','22');
 
 

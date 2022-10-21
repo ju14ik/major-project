@@ -615,7 +615,9 @@ input[type=text] {
 
 /* Other recipes block */
 .other-recipes-container {
-    margin-top: 2em;
+    margin-top: 3em;
+    border-top: 1px solid #BBB;
+    padding-top: 20px;
 }
 
 .recipes-block {

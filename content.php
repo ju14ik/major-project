@@ -71,7 +71,7 @@
                                             if(mysqli_num_rows($content_result) > 0) {
                                                 $end_content_id = $start_content_id+(mysqli_num_rows($content_result)-1);
                                             }
-                                            echo '<a href="detail.php?content_id='.$content_id.'&pagename='.$pagename.'&start_content_id='.$start_content_id.'&end_content_id='.$end_content_id.'">Read more</a>'; 
+                                            echo '<a href="detail.php?content_id='.$content_id.'&pagename='.$pagename.'&start_content_id='.$start_content_id.'&end_content_id='.$end_content_id.'&recipe=1">Read more</a>'; 
                                         ?>
                                     </div>  
                                 </div>
