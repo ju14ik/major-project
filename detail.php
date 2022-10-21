@@ -5,6 +5,7 @@
             $start_content_id = 0;
             $end_content_id = 0;
             $pagename = '';
+            $search = '';
             if(isset($_GET['content_id']))
             {
                 $content_id = $_GET['content_id'];
@@ -20,6 +21,10 @@
             if(isset($_GET['end_content_id']))
             {
                 $end_content_id = $_GET['end_content_id'];
+            }
+            if(isset($_GET['search']))
+            {
+                $search = $_GET['search'];
             }
         ?>
         <div class="wrapper">
@@ -75,7 +80,15 @@
                             echo '</div>';
                         }
                         else {
-                            echo '<div class="nav-button back"><a href="index.php">Back</a></div>';
+                            if($search != '' && $search != 'all') {
+                                echo '<div class="nav-button back"><a href="search.php?search='.$search.'">Back</a></div>';
+                            }
+                            elseif($search == 'all') {
+                                echo '<div class="nav-button back"><a href="search.php?search=">Back</a></div>';
+                            }
+                            else {
+                                echo '<div class="nav-button back"><a href="index.php">Back</a></div>';
+                            }
                         }
                     ?>
             </main>

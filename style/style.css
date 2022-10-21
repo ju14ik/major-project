@@ -69,12 +69,14 @@ body, html {
     margin: auto;
     font-family: ClearSansRegular;
     color: #212d42;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
 }
 
 /* Main */
 main {
-    padding-bottom: 14em;
+    padding-bottom: 2em;
 }
 
 main, .container {
@@ -154,14 +156,17 @@ header img {
 
 /* Footer */
 footer {
-    text-align: center;
+    /* text-align: center;
     background-color: #fff;
     border-top: 1px solid #cccccc;
-    position: absolute;
+    position: relative;
     bottom: 0;
+    width: 100%; */
+    margin-top: auto;
+    border-top: 1px solid #cccccc;
+    text-align: center;
     width: 100%;
-    /* position: sticky;
-    bottom: 0; */
+
 }
 footer > p {
     padding: 1em 0;
@@ -454,6 +459,15 @@ input[type=text] {
     align-items: center;
 }
 
+.search {
+    margin: 2em auto 2em auto;
+    /* height: 100vh; */
+}
+
+.search-result-item {
+    padding-bottom: 0.8em;
+}
+
 
 /* Footer nav */
 .bottom-nav {
@@ -686,14 +700,6 @@ input[type=text] {
 
     .fa-search {
         color: #212d42;
-    }
-
-    .search {
-        padding: 2em 0;
-    }
-
-    .search-result-item {
-        padding-bottom: 0.8em;
     }
 }
 
