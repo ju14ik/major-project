@@ -25,7 +25,7 @@
             <ul class="bottom-nav">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="content.php">All recipes</a></li>
-                <li><a href="mailto:hikefoodie@gmail.com">Contact us</a></li>
+                <li><a href="contact.php">Contact us</a></li>
             </ul>
             <!-- <div class="social-media">
                 <a href="#" class="fa fa-facebook"></a>

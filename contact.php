@@ -8,6 +8,9 @@
             <label for="lname">Last Name</label>
             <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
+            <label for="email">Email address</label>
+            <input type="text" id="email" name="email" placeholder="Your last email address..">
+
             <label for="subject">Subject</label>
             <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
