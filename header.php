@@ -39,7 +39,7 @@
         <!-- Title -->
         <title><?php echo $page_title; ?></title>
         <!-- Links -->
-        <link rel="canonical" href="https://julija.uk/something/something.php" />
+        <link rel="canonical" href="https://julija.uk/something/something.php">
         <link rel="icon" type="image/x-icon" href="./images/favicon.png">
         <link rel="stylesheet" href="style/style.css?version=41">
         <!-- Used by search button -->
