@@ -3,7 +3,7 @@
             include "connect.php";
             if(isset($_GET['search']))
             {
-                $search = str_replace("", "%", strtolower($_GET['search']));
+                $search = str_replace("+", "%", strtolower($_GET['search']));
             }
         ?>
         <div class="wrapper">

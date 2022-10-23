@@ -16,10 +16,6 @@
                     <span class="tooltip">Youtube</span>
                     <a href="https://www.youtube.com/channel/UCOGukfrt7i9nj6gGWYq6hiQ"><span><i class="fab fa-youtube"></i></span></a>
                 </li>
-                <!-- <li class="icon github">
-                    <span class="tooltip">Github</span>
-                    <span><i class="fab fa-github"></i></span>
-                </li> -->
             </ul>
 
             <ul class="bottom-nav">
@@ -27,12 +23,6 @@
                 <li><a href="content.php">All recipes</a></li>
                 <li><a href="contact.php">Contact us</a></li>
             </ul>
-            <!-- <div class="social-media">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-youtube"></a>
-                <a href="#" class="fa fa-instagram"></a>
-            </div> -->
             <p>&copy; Julija Celinska 2022</p>
         </footer>
     </body>
@@ -52,7 +42,6 @@
                 mybutton.style.display = "none";
             }
         }
-
             // When the user clicks on the button, scroll to the top of the document
             function topFunction() {
             document.body.scrollTop = 0;
