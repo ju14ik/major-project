@@ -36,7 +36,7 @@
             <p>&copy; Julija Celinska 2022</p>
         </footer>
     </body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-long-arrow-alt-up"></button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-long-arrow-alt-up"></i></button>
 
     <script>
         // Get the button
@@ -46,17 +46,17 @@
         window.onscroll = function() {scrollFunction()};
 
         function scrollFunction() {
-        if ((document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) && screen.width > 992) {
-            mybutton.style.display = "block";
-        } else {
-            mybutton.style.display = "none";
-        }
+            if ((document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) && screen.width > 992) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
         }
 
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
         }
     </script>
 

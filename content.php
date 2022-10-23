@@ -67,7 +67,7 @@
                                         <?php 
                                             if($index == 0) {
                                                 $start_content_id = $content_id;
-                                                                                           }
+                                            }
                                             if(mysqli_num_rows($content_result) > 0) {
                                                 $end_content_id = $start_content_id+(mysqli_num_rows($content_result)-1);
                                             }
