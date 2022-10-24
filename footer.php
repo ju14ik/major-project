@@ -25,8 +25,10 @@
             </ul>
             <p>&copy; Julija Celinska 2022</p>
         </footer>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+            <i class="fa fa-long-arrow-alt-up"></i>
+        </button>
     </body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-long-arrow-alt-up"></i></button>
 
     <script>
         // Get the button
