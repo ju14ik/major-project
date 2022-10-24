@@ -68,9 +68,9 @@
                 ?>
                 <div class="search-form-container">
                     <form class="search-form" action="./search.php" autocomplete="on">
-                        <label for="search"> </label>
+                        <label for="search">&#8203;</label>
                         <input id="search" name="search" type="text" placeholder="What are you looking for?">
-                        <button class="search-button" type="submit"><i class="fa fa-search fa-2x"></i> </button>
+                        <button class="search-button" type="submit"><i class="fa fa-search fa-2x"></i>&#8203;</button>
                     </form>
                 </div>
             </div>
