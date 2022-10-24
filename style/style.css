@@ -122,7 +122,7 @@ main, .container {
 }
 
 .home-page > h2 > span {
-    /* color: #f65d38; */
+    /* color: #CC3712; */
     color: #C70C0C;
 }
 
@@ -350,12 +350,12 @@ footer > p {
     font-weight: 700;
     margin: 1.4em 0;
     padding: 5px 20px;
-    outline: 2px solid #f65d38;
+    outline: 2px solid #CC3712;
     border-radius: 14px;
 }
 
 .readmore-button > a, .goback-button > a {
-    color: #f65d38;
+    color: #CC3712;
     text-decoration: none;
 }
 
@@ -374,7 +374,7 @@ footer > p {
 .nav-button > a {
     text-decoration: none;
     display: inline-block;
-    background-color: #f65d38;
+    background-color: #CC3712;
     color: #fff;
     border-radius: 14px;
     width: 120px;
@@ -450,7 +450,7 @@ footer > p {
     /* float: left; */
     height: 29px;
     /* width: 31px; */
-    background: #f65d38;
+    background: #CC3712;
     color: #fff;
     font-size: 0.6em;
     /* border: 1px solid grey; */
@@ -501,7 +501,7 @@ footer > p {
 }
 
 .bottom-nav a:hover {
-    background-color: #f65d38;
+    background-color: #CC3712;
     color: #fff;
 }
 
@@ -635,7 +635,7 @@ footer > p {
     font-size: 1.2em;
     border: none;
     outline: none;
-    background-color: #f65d38;
+    background-color: #CC3712;
     color: #fff;
     cursor: pointer;
     padding: 10px 16px;
@@ -681,7 +681,7 @@ footer > p {
 }
 
 .other-recipe > a > h2:hover {
-    color: #f65d38;
+    color: #CC3712;
 }
 
 .other-recipes-container > h2 {
@@ -704,7 +704,7 @@ footer > p {
 }
   
 .contact-container input[type=submit] {
-    background-color: #f65d38;
+    background-color: #CC3712;
     color: white;
     padding: 12px 20px;
     border: none;
