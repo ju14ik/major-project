@@ -1,1 +1,2 @@
-# Could be used to ignore some files
+# Exclude folders
+/examples/
