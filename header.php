@@ -40,7 +40,7 @@
         <title><?php echo $page_title; ?></title>
         <!-- Links -->
         <link rel="icon" type="image/x-icon" href="./images/favicon.png">
-        <link rel="stylesheet" href="style/style.css?version=41">
+        <link rel="stylesheet" href="style/style.css?version=42">
         <!-- Used by search button -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
@@ -68,7 +68,9 @@
                 ?>
                 <div class="search-form-container">
                     <form class="search-form" action="./search.php" autocomplete="on">
+                        <!-- Label is missing intentionally -->
                         <input id="search" name="search" type="text" placeholder="What are you looking for?">
+                        <!-- Button is empty intentinally -->
                         <button class="search-button" type="submit"><i class="fa fa-search fa-2x"></i></button>
                     </form>
                 </div>
