@@ -68,10 +68,9 @@
                 ?>
                 <div class="search-form-container">
                     <form class="search-form" action="./search.php" autocomplete="on">
-                        <!-- Label is missing intentionally -->
+                        <label for="search"> </label>
                         <input id="search" name="search" type="text" placeholder="What are you looking for?">
-                        <!-- Button is empty intentinally -->
-                        <button class="search-button" type="submit"><i class="fa fa-search fa-2x"></i></button>
+                        <button class="search-button" type="submit"><i class="fa fa-search fa-2x"></i> </button>
                     </form>
                 </div>
             </div>
