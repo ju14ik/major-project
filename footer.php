@@ -29,25 +29,14 @@
             <i class="fa fa-long-arrow-alt-up"></i>
         </button>
 
-        <script>
-            // Get the button
-            let mybutton = document.getElementById("myBtn");
+        <div class="cookies-eu-banner hidden">
+            By clicking ”OK”, you agree to the storing of cookies on your device to
+            enhance site navigation, analyze site usage, and improve marketing.
+            <button>Accept</button>
+        </div>
 
-            // When the user scrolls down 20px from the top of the document, show the button
-            window.onscroll = function() {scrollFunction()};
+        <script src="js/cookies.js"></script>
+        <script src="js/tothetop.js"></script>
 
-            function scrollFunction() {
-                if ((document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) && screen.width > 992) {
-                    mybutton.style.display = "block";
-                } else {
-                    mybutton.style.display = "none";
-                }
-            }
-                // When the user clicks on the button, scroll to the top of the document
-                function topFunction() {
-                document.body.scrollTop = 0;
-                document.documentElement.scrollTop = 0;
-            }
-        </script>
     </body>
 </html>
